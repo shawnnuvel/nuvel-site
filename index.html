@@ -1,106 +1,79 @@
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nuvel Pte Ltd – Data Intelligence</title>
+  <title>Nuvel</title>
   <style>
+    /* ----- Colour palette ----- */
     :root {
-      --primary: #1c7ed6;
-      --dark: #0b1e33;
-      --light: #eef4ff;
+      --blue:#1c7ed6;   /* brand primary */
+      --dark:#10233e;   /* primary text */
+      --gray:#6c7a89;   /* secondary text */
+      --light:#f5f8ff;  /* soft background */
     }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--dark);
-      background: var(--light);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      background: var(--dark);
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      font-size: 1.5rem;
-      margin: 0;
-    }
-    header nav a {
-      color: #fff;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    .hero {
-      flex: 1;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 4rem 1rem;
-      background: linear-gradient(160deg,var(--primary),#5dade2);
-      color: #fff;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto 2rem;
-      line-height: 1.6;
-    }
-    .cta-btn {
-      background: #fff;
-      color: var(--primary);
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 9999px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .cta-btn:hover {
-      background: #f0f8ff;
-    }
-    footer {
-      background: #fff;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.8rem;
-      color: #666;
-      box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
-    }
-    @media (min-width: 640px) {
-      .hero h2 { font-size: 3rem; }
-    }
+
+    /* ----- Global reset ----- */
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Helvetica,Arial,sans-serif}
+    body{background:var(--light);color:var(--dark);line-height:1.5;}
+
+    /* ----- Hero header ----- */
+    header{padding:4rem 1.5rem;text-align:center;background:white;box-shadow:0 2px 4px rgba(0,0,0,.05);} 
+    header h1{font-size:2.4rem;font-weight:700;margin-bottom:.75rem;color:var(--blue);} 
+    header p{font-size:1.1rem;color:var(--gray);} 
+
+    /* ----- Content wrapper ----- */
+    section{max-width:820px;margin:3rem auto;padding:0 1.5rem;}
+
+    /* ----- Card grid ----- */
+    .cards{display:grid;gap:1.5rem;margin-top:2rem;}
+    .card{background:white;padding:1.75rem;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.05);} 
+    .card h3{margin-bottom:.5rem;font-size:1.15rem;color:var(--blue);} 
+
+    /* ----- Footer ----- */
+    footer{text-align:center;font-size:.85rem;color:var(--gray);margin:4rem 0 2rem;}
+
+    /* ----- Mobile‑first → 3‑col on wider screens ----- */
+    @media(min-width:640px){.cards{grid-template-columns:repeat(3,1fr);} header h1{font-size:2.8rem;}}
   </style>
 </head>
 <body>
+  <!-- Hero ------------------------------------------------------------------>  
   <header>
-    <h1>Nuvel</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="mailto:hello@nuvel.ai">Contact</a>
-    </nav>
+    <h1>Nuvel Data Intelligence</h1>
+    <p>High‑resolution, static snapshots of<br><strong>≈ 470 million people & 20 million company profiles</strong><br>fueling AI‑driven talent mapping and market insight.</p>
   </header>
 
-  <section class="hero">
-    <div>
-      <h2>Data that Powers Talent Intelligence</h2>
-      <p>Nuvel delivers a continuously‑refreshed global dataset of 470&nbsp;million professional profiles—ready for recruiting platforms, workforce analytics and AI‑driven talent solutions.</p>
-      <button class="cta-btn" onclick="location.href='mailto:hello@nuvel.ai'">Request a Demo</button>
+  <!-- Value props ----------------------------------------------------------->
+  <section>
+    <h2 style="text-align:center;font-size:1.45rem;font-weight:600;">Why Nuvel?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>One‑time Snapshot</h3>
+        <p>Delivered in open Parquet format. No subscription lock‑in—ideal for bulk ETL, offline analytics, or on‑prem environments.</p>
+      </div>
+      <div class="card">
+        <h3>Global + Corporate Graph</h3>
+        <p>≈ 470 M professional profiles plus <strong>≈ 40 M company entities</strong>. Cross‑linked IDs for org‑chart reconstruction and market‑share modeling.</p>
+      </div>
+      <div class="card">
+        <h3>AI‑Ready</h3>
+        <p>Optimised for LLM fine‑tuning, vector‑embedding stores, feature engineering, and retrieval‑augmented generation (RAG) workloads.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Call‑to‑action --------------------------------------------------------->
+  <section>
+    <h2 style="text-align:center;font-size:1.4rem;font-weight:600;">Get the Data</h2>
+    <p style="text-align:center;margin-top:1rem;">Request pricing, a schema sample, or a 10 K record sandbox:</p>
+    <p style="text-align:center;margin-top:.6rem;font-size:1.15rem;"><a href="mailto:shawn@nuvel.ai" style="color:var(--blue);text-decoration:none;">shawn@nuvel.ai</a></p>
+  </section>
+
+  <!-- Footer ---------------------------------------------------------------->
   <footer>
-    © 2025 Nuvel Pte Ltd — Singapore UEN&nbsp;XXXXXXXXX
+    © Nuvel 2025
   </footer>
 </body>
 </html>
