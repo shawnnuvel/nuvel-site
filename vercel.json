@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm ci",
+  "buildCommand": "npm ci",
   "outputDirectory": ".next",
   "framework": "nextjs",
   "functions": {
