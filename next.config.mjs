@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
-  
   // Performance optimizations
   experimental: {
     optimizePackageImports: ['react-icons']

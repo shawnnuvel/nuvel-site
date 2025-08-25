@@ -1,6 +1,4 @@
 {
-  "buildCommand": "npm ci",
-  "outputDirectory": ".next",
   "framework": "nextjs",
   "functions": {
     "app/api/health/route.ts": {
