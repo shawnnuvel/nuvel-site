@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nuvel-verify-graph.vercel.app/sitemap.xml

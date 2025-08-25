@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-primary-800 bg-white font-sans antialiased;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent-500 ring-offset-2 ring-offset-white;
+  }
+
+  /* Skip link for screen readers */
+  .skip-link {
+    @apply absolute -top-10 left-4 bg-accent-600 text-white px-4 py-2 rounded-md z-50;
+    @apply focus:top-4 transition-all duration-300;
+  }
+}
+
+@layer components {
+  /* Button variants */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg;
+    @apply bg-accent-600 text-white hover:bg-accent-700 focus:bg-accent-700;
+    @apply transition-colors duration-200 ease-in-out;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg;
+    @apply bg-white text-primary-700 border border-primary-300 hover:bg-primary-50 focus:bg-primary-50;
+    @apply transition-colors duration-200 ease-in-out;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-4 py-2 text-base font-medium rounded-lg;
+    @apply text-primary-600 hover:text-primary-800 hover:bg-primary-100 focus:bg-primary-100;
+    @apply transition-colors duration-200 ease-in-out;
+  }
+
+  /* Container utilities */
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-xl border border-primary-200 shadow-sm;
+  }
+
+  .card-hover {
+    @apply transition-shadow duration-300 hover:shadow-lg;
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .animate-stagger > * {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-stagger > *:nth-child(1) { animation-delay: 0.1s; }
+  .animate-stagger > *:nth-child(2) { animation-delay: 0.2s; }  
+  .animate-stagger > *:nth-child(3) { animation-delay: 0.3s; }
+  .animate-stagger > *:nth-child(4) { animation-delay: 0.4s; }
+  .animate-stagger > *:nth-child(5) { animation-delay: 0.5s; }
+  .animate-stagger > *:nth-child(6) { animation-delay: 0.6s; }
+}
+
+@layer utilities {
+  /* Accessibility utilities */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  /* Print styles */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+@media (min-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-primary-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-400;
+  }
+}

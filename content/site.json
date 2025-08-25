@@ -1,0 +1,22 @@
+{
+  "company": {
+    "name": "Nuvel",
+    "product": "Nuvel Verify Graph",
+    "tagline": "Bulk Employment Verification for Executive Search",
+    "description": "White-label Evidence Packs powered by the Nuvel Verify Graph"
+  },
+  "contact": {
+    "email": "hello@nuvel.ai",
+    "calendlyUrl": null
+  },
+  "urls": {
+    "website": "https://nuvel-verify-graph.vercel.app"
+  },
+  "legal": {
+    "privacyPolicy": null,
+    "termsOfService": null
+  },
+  "analytics": {
+    "plausibleDomain": null
+  }
+}
