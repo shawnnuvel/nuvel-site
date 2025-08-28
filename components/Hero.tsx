@@ -11,7 +11,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-50 border border-accent-200 text-accent-800 text-sm font-medium mb-8">
             <div className="w-2 h-2 bg-accent-500 rounded-full mr-2"></div>
-            24–48h SLA with fee credits
+            24h SLA with fee credits
           </div>
 
           {/* Headline */}
@@ -20,8 +20,13 @@ export function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-primary-600 mb-10 text-balance leading-relaxed">
+          <p className="text-xl md:text-2xl text-primary-600 mb-6 text-balance leading-relaxed">
             {copy.hero.subtitle}
+          </p>
+
+          {/* Outcome Row */}
+          <p className="text-lg md:text-xl text-primary-700 mb-10 font-medium">
+            {copy.hero.outcomeRow}
           </p>
 
           {/* CTAs */}
@@ -31,21 +36,10 @@ export function Hero() {
             className="justify-center"
           />
 
-          {/* Trust bullets */}
-          <ul className="text-sm text-primary-500 mt-8 space-y-2 max-w-2xl mx-auto">
-            <li className="flex items-center justify-center">
-              <div className="w-1 h-1 bg-primary-400 rounded-full mr-3"></div>
-              Factual, time-boxed overlaps with day-level assumptions labeled
-            </li>
-            <li className="flex items-center justify-center">
-              <div className="w-1 h-1 bg-primary-400 rounded-full mr-3"></div>
-              Confidence bands (HIGH/MED) with big-brand/location safeguards
-            </li>
-            <li className="flex items-center justify-center">
-              <div className="w-1 h-1 bg-primary-400 rounded-full mr-3"></div>
-              White-label PDF + CSV, "historical public web sources," deletion in 48h
-            </li>
-          </ul>
+          {/* Trust line */}
+          <p className="text-sm text-primary-500 mt-8">
+            {copy.hero.trustLine}
+          </p>
         </div>
       </Container>
     </section>

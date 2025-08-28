@@ -1,9 +1,11 @@
 export const copy = {
   hero: {
-    title: 'Management Team Overlap Analysis for PE & Corp Dev',
-    subtitle: 'Attachable, auditable co-employment evidence delivered in 24 hours.',
-    primaryCTA: 'Get a watermarked sample',
-    secondaryCTA: 'See a 2-page explainer'
+    title: 'Prove who actually worked together',
+    subtitle: 'An attachable management-team overlap exhibit for Private Equity — delivered in 24 hours.',
+    outcomeRow: 'Eliminate "we worked together" disputes before your next IC/board meeting.',
+    primaryCTA: 'Get sample exhibit',
+    secondaryCTA: 'View explainer',
+    trustLine: 'Also used by Corporate Development teams.'
   },
 
   steps: {
