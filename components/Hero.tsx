@@ -31,10 +31,21 @@ export function Hero() {
             className="justify-center"
           />
 
-          {/* Social proof hint */}
-          <p className="text-sm text-primary-500 mt-8">
-            Trusted by executive search firms for standardized verification methodology
-          </p>
+          {/* Trust bullets */}
+          <ul className="text-sm text-primary-500 mt-8 space-y-2 max-w-2xl mx-auto">
+            <li className="flex items-center justify-center">
+              <div className="w-1 h-1 bg-primary-400 rounded-full mr-3"></div>
+              Factual, time-boxed overlaps with day-level assumptions labeled
+            </li>
+            <li className="flex items-center justify-center">
+              <div className="w-1 h-1 bg-primary-400 rounded-full mr-3"></div>
+              Confidence bands (HIGH/MED) with big-brand/location safeguards
+            </li>
+            <li className="flex items-center justify-center">
+              <div className="w-1 h-1 bg-primary-400 rounded-full mr-3"></div>
+              White-label PDF + CSV, "historical public web sources," deletion in 48h
+            </li>
+          </ul>
         </div>
       </Container>
     </section>

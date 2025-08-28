@@ -1,60 +1,48 @@
 export const copy = {
   hero: {
-    title: 'Bulk Employment Verification for Executive Search',
-    subtitle: 'White-label Evidence Packs powered by the Nuvel Verify Graph',
-    primaryCTA: 'Get Sample Evidence Pack',
-    secondaryCTA: 'Start $5k Pilot'
+    title: 'Management Team Overlap Analysis for PE & Corp Dev',
+    subtitle: 'Attachable, auditable co-employment evidence delivered in 24 hours.',
+    primaryCTA: 'Get a watermarked sample',
+    secondaryCTA: 'See a 2-page explainer'
   },
 
   steps: {
     title: 'How it works',
-    subtitle: 'Three simple steps to verified employment data',
+    subtitle: 'Three simple steps',
     items: [
       {
         number: '1',
-        title: 'Upload CSV',
-        description: 'Provide names + companies or profile links via secure upload'
+        title: 'Upload names (CSV of 8–15 execs)',
+        description: 'Management team roster with claimed positions and companies'
       },
       {
         number: '2',
-        title: 'Verify via Graph',
-        description: 'Strict normalization, ≥30d/≥60d rules, confidence flags applied'
+        title: 'We verify overlaps (Nuvel Verify Graph with assumptions labeled)',
+        description: 'Factual overlap analysis with confidence scoring and location safeguards'
       },
       {
         number: '3',
-        title: 'Deliver Evidence Pack',
-        description: 'Your-branded PDF + CSV + Method, QA, Deletion Attestation within 24–48h SLA'
+        title: 'You attach the pack (PDF + CSV into IC/board materials)',
+        description: 'White-label evidence ready for investment committee presentations'
       }
     ]
   },
 
   benefits: {
-    title: 'Why firms choose Nuvel',
-    subtitle: 'Enterprise-grade verification with complete transparency',
+    title: 'What\'s inside the Evidence Pack',
+    subtitle: 'Attachable exhibits for IC and board materials',
     items: [
       {
-        title: 'Scale without strain',
-        description: 'Process 500+ verifications per month without operational overhead'
+        title: 'Verified Overlaps (entity/same-country)',
+        description: 'Factual, time-boxed overlaps with day-level assumptions labeled'
       },
       {
-        title: 'Standardized methodology',
-        description: 'Consistent approach across desks, regions, and team members'
+        title: 'Brand-level Overlaps (different/unknown office)',
+        description: 'Confidence bands (HIGH/MED) with big-brand/location safeguards'
       },
       {
-        title: 'Audit-ready',
-        description: 'All assumptions and confidence flags fully disclosed'
-      },
-      {
-        title: '24–48h SLA',
-        description: 'Guaranteed delivery timeframe with fee credits on breach'
-      },
-      {
-        title: 'White-label output',
-        description: 'Evidence Packs delivered under your brand identity'
-      },
-      {
-        title: 'Data minimization',
-        description: 'Client uploads securely deleted within 48 hours'
+        title: 'Assumptions & QA notes, Report ID, deletion pledge',
+        description: 'White-label PDF + CSV, "historical public web sources," deletion in 48h'
       }
     ]
   },
@@ -72,7 +60,7 @@ export const copy = {
   },
 
   compliance: {
-    text: 'Nuvel processes data from public professional web sources to produce supporting evidence for business decisions. Not a CRA/FCRA report. Client uploads deleted within 48 hours.'
+    text: 'Supporting evidence only; not a consumer report. Based on historical public web sources (2015–2022 baseline; later updates where available).'
   },
 
   // Page-specific content
