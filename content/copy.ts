@@ -1,11 +1,11 @@
 export const copy = {
   hero: {
-    title: 'Find pre-formed teams before they announce',
-    subtitle: 'Spinout reports for Corporate Venture and Corporate Development Teams in 48 hours.',
-    outcomeRow: '',
+    title: 'Identify specialized teams for strategic investments',
+    subtitle: 'Data reports of niche professionals with proven collaboration within a vertical. Trusted by top Corporate Venture & Corporate Development teams.',
+    outcomeRow: 'Eliminate "we worked together" disputes before your next IC/board meeting.',
     primaryCTA: 'Get a sample report',
-    secondaryCTA: 'See a redacted sample',
-    trustLine: 'Also used by Corporate Development teams at Fortune 500 companies.'
+    secondaryCTA: '',
+    trustLine: ''
   },
 
   steps: {
@@ -117,16 +117,8 @@ export const copy = {
         answer: 'We use historical public web sources to identify team overlaps and provide supporting evidence for your sourcing decisions.'
       },
       {
-        question: 'How is this different from "stealth keyword" searches?',
-        answer: 'We look at who actually worked together and left within a tight window, not just profile keywords.'
-      },
-      {
         question: 'Is this a legal verification or background check?',
         answer: 'No. It\'s supporting evidence for sourcing and strategy. You own decisions.'
-      },
-      {
-        question: 'What if a pod looks like a layoff wave?',
-        answer: 'We flag and typically exclude unless the team shows strong internal ties and craft evidence.'
       },
       {
         question: 'Do you cover my region/sector?',

@@ -25,17 +25,15 @@ export function Hero() {
             {copy.hero.outcomeRow}
           </p>
 
-          {/* CTAs */}
-          <CTAGroup 
-            primaryText={copy.hero.primaryCTA}
-            secondaryText={copy.hero.secondaryCTA}
-            className="justify-center"
-          />
-
-          {/* Trust line */}
-          <p className="text-sm text-primary-500 mt-8">
-            {copy.hero.trustLine}
-          </p>
+          {/* CTA */}
+          <div className="flex justify-center">
+            <a
+              href={copy.hero.primaryCTA === 'Get a sample report' ? 'mailto:hello@nuvel.ai?subject=Sample request — Spinout Origins Baseline&body=Company name:%0ATheme(s):%0ATimeline:' : '#'}
+              className="inline-flex items-center px-8 py-4 rounded-lg bg-accent-500 hover:bg-accent-600 text-white font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
+              {copy.hero.primaryCTA}
+            </a>
+          </div>
         </div>
       </Container>
     </section>

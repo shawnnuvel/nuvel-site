@@ -56,11 +56,11 @@ export function Pricing() {
         </div>
 
         {/* Guarantee */}
-        <div className="text-center p-6 bg-success-50 rounded-lg border border-success-200">
-          <div className="text-lg font-semibold text-success-700 mb-2">
+        <div className="text-center p-6 bg-accent-50 rounded-lg border border-accent-200">
+          <div className="text-lg font-semibold text-accent-700 mb-2">
             Guarantee
           </div>
-          <p className="text-success-700">
+          <p className="text-accent-700">
             {copy.pricing.guarantee}
           </p>
         </div>
