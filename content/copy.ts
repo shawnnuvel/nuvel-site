@@ -1,8 +1,8 @@
 export const copy = {
   hero: {
-    title: 'Identify specialized teams for strategic investments',
+    title: 'Identify Specialized Teams for Deal-sourcing',
     subtitle: 'Data reports of niche professionals with proven collaboration within a vertical. Trusted by top Corporate Venture & Corporate Development teams.',
-    outcomeRow: 'Eliminate "we worked together" disputes before your next IC/board meeting.',
+    outcomeRow: '',
     primaryCTA: 'Get a sample report',
     secondaryCTA: '',
     trustLine: ''
@@ -15,17 +15,17 @@ export const copy = {
       {
         number: '1',
         title: 'Pick your scope',
-        description: 'Choose a theme (eg, Vision/AR, AI infra)'
+        description: 'Choose your search parameters: vertical (eg, Robotics, AI, Biotech), anchor employers (eg, OpenAI, AWS), geography, roles.'
       },
       {
         number: '2',
-        title: 'We detect pods',
-        description: 'We find small clusters of people who actually worked together, adding patent/role evidence (if available)'
+        title: 'Pods detection',
+        description: 'Nuvel uses a graph of ~800+M employment stint data points to surface clusters of people with documented co-employment and/or co-created patents'
       },
       {
         number: '3',
-        title: 'Actionable insights delivered',
-        description: 'We deliver a report (PDF + CSV) you can attach and act on immediately.'
+        title: 'What\'s delivered',
+        description: 'Report + Pod card that produces immediate and actionable data'
       }
     ]
   },

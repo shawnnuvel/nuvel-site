@@ -20,10 +20,7 @@ export function Hero() {
             {copy.hero.subtitle}
           </p>
 
-          {/* Outcome Row */}
-          <p className="text-lg md:text-xl text-primary-700 mb-10 font-medium">
-            {copy.hero.outcomeRow}
-          </p>
+
 
           {/* CTA */}
           <div className="flex justify-center">
