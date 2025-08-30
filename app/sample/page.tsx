@@ -5,11 +5,11 @@ import { copy } from '@/content/copy'
 import { createMailtoLink } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Sample Evidence Pack - Nuvel Verify Graph',
-  description: 'Preview of our verification deliverables. All personal information has been anonymized while preserving the structure and analytical approach.',
+  title: 'Sample Report - Spinout Origins Baseline',
+  description: 'This is a watermarked example. Request the full redacted PDF at hello@nuvel.ai.',
   openGraph: {
-    title: 'Sample Evidence Pack - Nuvel Verify Graph',
-    description: 'Preview of our verification deliverables. All personal information has been anonymized while preserving the structure and analytical approach.',
+    title: 'Sample Report - Spinout Origins Baseline',
+    description: 'This is a watermarked example. Request the full redacted PDF at hello@nuvel.ai.',
   },
 }
 
@@ -64,12 +64,11 @@ export default function SamplePage() {
                 
                 <div className="space-y-4 mb-8">
                   {[
-                    'Executive summary with key findings',
-                    'Individual verification status for each candidate',
-                    'Confidence scores and methodology notes',
-                    'Timeline analysis and employment gaps',
-                    'Cross-reference validation results',
-                    'Data sources and collection methodology'
+                    'Executive Summary with top pods ranked',
+                    'Pod Cards with overlaps and craft evidence',
+                    'CSV export with confidence scores',
+                    'Methodology and Data cut-off: 2024-12-31',
+                    'Compliance attestations'
                   ].map((item, index) => (
                     <div key={index} className="flex items-center">
                       <div className="w-2 h-2 bg-success-500 rounded-full mr-4"></div>
@@ -78,26 +77,17 @@ export default function SamplePage() {
                   ))}
                 </div>
 
-                {/* Note */}
-                <div className="bg-primary-50 border border-primary-200 rounded-lg p-6">
-                  <h3 className="font-semibold text-primary-900 mb-2">
-                    Full Access Available
-                  </h3>
-                  <p className="text-sm text-primary-600 mb-4">
-                    {copy.pages.sample.note}
-                  </p>
+                {/* CTA */}
+                <div className="text-center">
                   <a 
                     href={createMailtoLink(
                       'hello@nuvel.ai',
-                      copy.emails.ndaSampleRequest.subject,
-                      copy.emails.ndaSampleRequest.body
+                      copy.emails.sampleRequest.subject,
+                      copy.emails.sampleRequest.body
                     )}
-                    className="inline-flex items-center text-accent-700 hover:text-accent-800 font-medium transition-colors"
+                    className="btn-primary text-lg py-4 px-8"
                   >
-                    Request full sample under NDA
-                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
+                    Get a sample report
                   </a>
                 </div>
               </div>
@@ -106,47 +96,27 @@ export default function SamplePage() {
         </Container>
       </section>
 
-      {/* Download section */}
+      {/* CTA section */}
       <section className="section-padding bg-primary-50">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-6">
-              Download Sample Pack
+              Ready to get started?
             </h2>
             <p className="text-xl text-primary-600 mb-10">
-              Get a redacted version to evaluate our format and methodology
+              Request your Spinout Origins Baseline report today
             </p>
 
-            {/* Download placeholder */}
-            <div className="card p-12 max-w-lg mx-auto">
-              <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-4-4m4 4l4-4m-7 13h10a2 2 0 002-2V5a2 2 0 00-2-2H6a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
-                Sample Evidence Pack
-              </h3>
-              <p className="text-primary-600 mb-6">
-                Redacted 5-person verification sample (PDF + CSV)
-              </p>
-              
-              {/* Placeholder button */}
-              <a 
-                href={createMailtoLink(
-                  'hello@nuvel.ai',
-                  copy.emails.downloadSampleRequest.subject,
-                  copy.emails.downloadSampleRequest.body
-                )}
-                className="btn-primary w-full inline-block text-center"
-              >
-                Download Sample
-              </a>
-              
-              <p className="text-xs text-primary-500 mt-4">
-                Full samples available under NDA
-              </p>
-            </div>
+            <a 
+              href={createMailtoLink(
+                'hello@nuvel.ai',
+                copy.emails.sampleRequest.subject,
+                copy.emails.sampleRequest.body
+              )}
+              className="btn-primary text-lg py-4 px-8"
+            >
+              Get a sample report
+            </a>
           </div>
         </Container>
       </section>

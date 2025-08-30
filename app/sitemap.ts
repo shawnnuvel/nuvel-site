@@ -11,16 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/investor-cohort-verification`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly', 
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/sample`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.6,
+      priority: 0.8,
     },
   ]
 }

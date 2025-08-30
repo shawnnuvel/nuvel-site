@@ -70,16 +70,28 @@ export function Header() {
               How it works
             </button>
             <button
-              onClick={() => scrollToSection('benefits')}
+              onClick={() => scrollToSection('whats-inside')}
               className="btn-ghost text-sm"
             >
-              Benefits
+              What's inside
             </button>
             <button
-              onClick={() => scrollToSection('use-cases')}
+              onClick={() => scrollToSection('pricing')}
               className="btn-ghost text-sm"
             >
-              Use cases
+              Pricing
+            </button>
+            <button
+              onClick={() => scrollToSection('faq')}
+              className="btn-ghost text-sm"
+            >
+              FAQ
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="btn-ghost text-sm"
+            >
+              Contact
             </button>
           </nav>
 
@@ -93,7 +105,7 @@ export function Header() {
               )}
               className="btn-primary text-sm hidden sm:inline-flex"
             >
-              Get Sample
+              Get a sample
             </a>
           </div>
         </div>

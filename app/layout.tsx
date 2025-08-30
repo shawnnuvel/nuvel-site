@@ -12,9 +12,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Nuvel Verify Graph - Bulk Employment Verification for Executive Search',
-  description: 'White-label Evidence Packs powered by the Nuvel Verify Graph. 24-48h SLA with standardized methodology for executive search firms.',
-  keywords: ['employment verification', 'executive search', 'evidence packs', 'verification graph', 'white-label'],
+  title: 'Spinout Origins Baseline — Pre-formed Team Detection | Nuvel',
+  description: 'One-off, Data cut-off labeled spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
+  keywords: ['spinout detection', 'corporate venture', 'corp dev', 'team analysis', 'founder pods'],
   authors: [{ name: 'Nuvel' }],
   creator: 'Nuvel',
   publisher: 'Nuvel',
@@ -31,15 +31,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    title: 'Nuvel Verify Graph - Bulk Employment Verification for Executive Search',
-    description: 'White-label Evidence Packs powered by the Nuvel Verify Graph. 24-48h SLA with standardized methodology for executive search firms.',
-    siteName: 'Nuvel Verify Graph',
+    title: 'Spinout Origins Baseline — Pre-formed Team Detection | Nuvel',
+    description: 'One-off, Data cut-off labeled spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
+    siteName: 'Spinout Origins Baseline',
     images: [
       {
         url: '/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'Nuvel Verify Graph',
+        alt: 'Spinout Origins Baseline',
       },
     ],
   },

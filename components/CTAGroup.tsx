@@ -25,11 +25,7 @@ export function CTAGroup({
     copy.emails.sampleRequest.body
   )
 
-  const pilotLink = calendlyUrl || createMailtoLink(
-    'hello@nuvel.ai',
-    copy.emails.pilotRequest.subject,
-    copy.emails.pilotRequest.body
-  )
+  // Remove unused pilot link since we now link to /sample
 
   const sizeClasses = {
     sm: 'text-sm',
@@ -55,9 +51,7 @@ export function CTAGroup({
 
       {/* Secondary CTA */}
       <a
-        href={pilotLink}
-        target={calendlyUrl ? '_blank' : undefined}
-        rel={calendlyUrl ? 'noopener noreferrer' : undefined}
+        href="/sample"
         className={cn(
           'btn-secondary w-full sm:w-auto',
           sizeClasses[size]

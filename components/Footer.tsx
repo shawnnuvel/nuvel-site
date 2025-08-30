@@ -14,7 +14,7 @@ export function Footer() {
             <div className="flex flex-col space-y-4 max-w-md">
               <Logo />
               <p className="text-sm text-primary-600 leading-relaxed">
-                White-label Evidence Packs powered by the Nuvel Verify Graph
+                Spinout Origins Baseline — Pre-formed Team Detection
               </p>
             </div>
 
@@ -25,16 +25,10 @@ export function Footer() {
               </h3>
               <div className="flex flex-col space-y-2">
                 <a 
-                  href="/investor-cohort-verification"
-                  className="text-sm text-primary-600 hover:text-primary-800 transition-colors"
-                >
-                  Investor Cohort Verification
-                </a>
-                <a 
                   href="/sample"
                   className="text-sm text-primary-600 hover:text-primary-800 transition-colors"
                 >
-                  Sample Evidence Pack
+                  Sample Report
                 </a>
                 <a 
                   href="mailto:hello@nuvel.ai"

@@ -1,8 +1,9 @@
 import { Hero } from '@/components/Hero'
 import { Steps } from '@/components/Steps'
 import { Benefits } from '@/components/Benefits'
-import { UseCaseTile } from '@/components/UseCaseTile'
-import { RiskReversal } from '@/components/RiskReversal'
+import { Pricing } from '@/components/Pricing'
+import { FAQ } from '@/components/FAQ'
+import { ContactForm } from '@/components/ContactForm'
 
 export default function HomePage() {
   return (
@@ -10,8 +11,9 @@ export default function HomePage() {
       <Hero />
       <Steps />
       <Benefits />
-      <UseCaseTile />
-      <RiskReversal />
+      <Pricing />
+      <FAQ />
+      <ContactForm />
     </>
   )
 }

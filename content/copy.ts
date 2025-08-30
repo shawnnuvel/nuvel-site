@@ -1,11 +1,11 @@
 export const copy = {
   hero: {
-    title: 'Prove who actually worked together',
-    subtitle: 'An attachable management-team overlap exhibit for Private Equity — delivered in 24 hours.',
-    outcomeRow: 'Eliminate "we worked together" disputes before your next IC/board meeting.',
-    primaryCTA: 'Get sample exhibit',
-    secondaryCTA: 'View explainer',
-    trustLine: 'Also used by Corporate Development teams.'
+    title: 'Find pre-formed teams before they announce',
+    subtitle: 'One-off spinout reports for Corporate Venture & Corp Dev. Data cut-off: 2024-12-31. 48 hours.',
+    outcomeRow: '',
+    primaryCTA: 'Get a sample report',
+    secondaryCTA: 'See a redacted sample',
+    trustLine: 'Also used by Corporate Development teams at Fortune 500 companies.'
   },
 
   steps: {
@@ -14,55 +14,143 @@ export const copy = {
     items: [
       {
         number: '1',
-        title: 'Upload names (CSV of 8–15 execs)',
-        description: 'Management team roster with claimed positions and companies'
+        title: 'Pick your scope',
+        description: 'Choose a theme (e.g., Vision/AR, AI infra) and anchor employers.'
       },
       {
         number: '2',
-        title: 'We verify overlaps (Nuvel Verify Graph with assumptions labeled)',
-        description: 'Factual overlap analysis with confidence scoring and location safeguards'
+        title: 'We detect pods',
+        description: 'We find small groups who actually worked together (≥90 days overlap, dense ties), then filter layoff spikes and add patent/role evidence.'
       },
       {
         number: '3',
-        title: 'You attach the pack (PDF + CSV into IC/board materials)',
-        description: 'White-label evidence ready for investment committee presentations'
+        title: 'You contact first',
+        description: 'We deliver a one-off, Data cut-off labeled report (PDF + CSV) you can attach and act on immediately.'
       }
     ]
   },
 
   benefits: {
-    title: 'What\'s inside the Evidence Pack',
-    subtitle: 'Attachable exhibits for IC and board materials',
+    title: 'What\'s inside the report',
+    subtitle: '',
     items: [
       {
-        title: 'Verified Overlaps (entity/same-country)',
-        description: 'Factual, time-boxed overlaps with day-level assumptions labeled'
+        title: 'Executive Summary (1 page)',
+        description: 'Top pods ranked with short reasons.'
       },
       {
-        title: 'Brand-level Overlaps (different/unknown office)',
-        description: 'Confidence bands (HIGH/MED) with big-brand/location safeguards'
+        title: 'Pod Cards (1 page each)',
+        description: 'Initials or full names, roles then/now, overlap periods, craft evidence (patents/role), confidence (HIGH/MED), and why it matters.'
       },
       {
-        title: 'Assumptions & QA notes, Report ID, deletion pledge',
-        description: 'White-label PDF + CSV, "historical public web sources," deletion in 48h'
+        title: 'CSV export',
+        description: 'Pod rows with date fields, confidence, and assumptions.'
+      },
+      {
+        title: 'Methodology & definitions',
+        description: 'Thresholds, layoff guard, and Data cut-off: 2024-12-31.'
+      },
+      {
+        title: 'Compliance',
+        description: 'Based on historical public web sources. Supporting evidence only. Client owns decisions.'
       }
     ]
   },
 
-  cohortVerification: {
-    title: 'Investor Cohort Verification',
-    description: 'IC-ready Evidence Packs documenting team overlaps and credentials.',
-    cta: 'View a redacted sample →'
+  method: {
+    title: 'Method',
+    items: [
+      'Real co-work: ≥90 days together at the same employer; pod size 2–5; dense ties (≥1 triangle).',
+      'Craft evidence: co-inventor/patent class links or strong role/topic coherence.',
+      'Layoff guard: we down-rank or exclude pods inside large layoff spikes.'
+    ]
   },
 
-  riskReversal: {
-    title: 'Risk-free validation',
-    description: 'Backtest 3–5 closed placements under NDA. If useful, start a $5k / 50-pack / 60-day pilot (100% credit to annual).',
-    cta: 'Backtest my last 5 placements →'
+  pricing: {
+    title: 'Pricing',
+    subtitle: 'One-off, no subscription. Reports include "Data cut-off: 2024-12-31."',
+    packages: [
+      {
+        title: 'Baseline',
+        price: '$4,000',
+        description: 'per theme/company analysis (48h)',
+        features: []
+      },
+      {
+        title: '3-Pack',
+        price: '$10,000',
+        description: '(prepay)',
+        features: []
+      },
+      {
+        title: '10-Pack', 
+        price: '$25,000',
+        description: '(prepay)',
+        features: []
+      }
+    ],
+    addOns: [
+      {
+        title: 'Pod Dossier',
+        price: '$2,000',
+        description: 'deep dive on one pod'
+      },
+      {
+        title: 'Intro-Path Map',
+        price: '$1,500', 
+        description: 'warm path suggestions'
+      },
+      {
+        title: 'Acquihire Package',
+        price: '$4,000',
+        description: 'comp bands, retention risk, integration notes'
+      }
+    ],
+    guarantee: 'Money-back/credit if <2 HIGH pods in scope.'
+  },
+
+  faq: {
+    title: 'FAQ',
+    items: [
+      {
+        question: 'Why "Data cut-off: 2024-12-31"?',
+        answer: 'It marks the latest date included. Your report is a point-in-time analysis you can attach and cite.'
+      },
+      {
+        question: 'How is this different from "stealth keyword" searches?',
+        answer: 'We look at who actually worked together and left within a tight window, not just profile keywords.'
+      },
+      {
+        question: 'Is this a legal verification or background check?',
+        answer: 'No. It\'s supporting evidence for sourcing and strategy. You own decisions.'
+      },
+      {
+        question: 'What if a pod looks like a layoff wave?',
+        answer: 'We flag and typically exclude unless the team shows strong internal ties and craft evidence.'
+      },
+      {
+        question: 'Do you cover my region/sector?',
+        answer: 'Yes—specify theme and anchors (e.g., Vision/AR; AI infra; Robotics; Biotech).'
+      },
+      {
+        question: 'How fast is delivery?',
+        answer: '48 hours for the Baseline. Add-ons can extend by 1–2 days.'
+      }
+    ]
+  },
+
+  contact: {
+    title: 'Contact',
+    email: 'hello@nuvel.ai',
+    form: {
+      title: 'Get started',
+      fields: ['name', 'email', 'company', 'theme'],
+      fallbackNote: 'Or email us directly at hello@nuvel.ai'
+    }
   },
 
   compliance: {
-    text: 'Supporting evidence only; not a consumer report. Based on historical public web sources (2015–2022 baseline; later updates where available).'
+    text: 'Based on historical public web sources. Supporting evidence only. Client owns decisions.'
   },
 
   // Page-specific content
@@ -98,101 +186,35 @@ export const copy = {
     },
     
     sample: {
-      title: 'Sample Evidence Pack',
-      subtitle: 'Preview of our verification deliverables',
-      description: 'This redacted sample demonstrates the format and depth of our Evidence Pack deliverables. All personal information has been anonymized while preserving the structure and analytical approach.',
-      note: 'Full Evidence Packs include detailed methodology, confidence scores, and deletion attestations. Contact us for access to complete samples under NDA.'
+      title: 'Sample Report',
+      subtitle: 'This is a watermarked example',
+      description: 'Request the full redacted PDF at hello@nuvel.ai.',
+      note: 'Get a sample report button (mailto: link above).'
     }
   },
 
   // Email templates
   emails: {
     sampleRequest: {
-      subject: 'Sample Evidence Pack Request',
-      body: `Hello,
-
-I'd like to request a sample Evidence Pack to evaluate Nuvel Verify Graph for our executive search practice.
-
-Company: [Your firm name]
-Use case: [Brief description of your verification needs]
-Volume: [Approximate monthly verification volume]
-
-Please send a redacted sample under NDA.
-
-Best regards,
-[Your name]`
-    },
-    
-    backtestRequest: {
-      subject: 'Backtest Request - 5 Placements',
-      body: `Hello,
-
-I'm interested in backtesting Nuvel Verify Graph on 5 recent placements to evaluate the service quality.
-
-Company: [Your firm name]
-Role: [Your role]
-Typical verification scope: [Brief description]
-
-I can provide candidate lists under NDA for backtesting. Please confirm next steps and NDA requirements.
-
-Best regards,
-[Your name]`
-    },
-    
-    pilotRequest: {
-      subject: 'Start $5k Pilot - Nuvel Verify Graph',
-      body: `Hello,
-
-I'm interested in starting a $5k / 50-pack / 60-day pilot of Nuvel Verify Graph.
-
-Company: [Your firm name]
-Expected monthly volume: [Number of verifications]
-Primary use case: [Brief description]
-
-Please send pilot terms and onboarding details.
-
-Best regards,
-[Your name]`
+      subject: 'Sample request — Spinout Origins Baseline',
+      body: `Company name:
+Theme(s):
+Timeline:`
     },
     
     headerSampleRequest: {
-      subject: 'Sample Evidence Pack Request',
-      body: `Hello,
-
-I'd like to request a sample Evidence Pack to evaluate Nuvel Verify Graph for our executive search practice.
-
-Company: [Your firm name]
-Use case: [Brief description of your verification needs]
-Volume: [Approximate monthly verification volume]
-
-Please send a redacted sample under NDA.
-
-Best regards,
-[Your name]`
+      subject: 'Sample request — Spinout Origins Baseline',
+      body: `Company name:
+Theme(s):
+Timeline:`
     },
     
-    ndaSampleRequest: {
-      subject: 'NDA Sample Request',
-      body: `Hello,
-
-I'd like to access a complete Evidence Pack sample under NDA to evaluate Nuvel Verify Graph.
-
-Company: [Your firm name]
-Role: [Your role]
-Use case: [Brief description]
-
-Best regards,
-[Your name]`
-    },
-    
-    downloadSampleRequest: {
-      subject: 'Sample Download Request',
-      body: `Hello,
-
-Please send me the redacted Evidence Pack sample.
-
-Best regards,
-[Your name]`
+    contactForm: {
+      subject: 'Contact request — Spinout Origins Baseline',
+      body: `Name: 
+Email: 
+Company: 
+Theme: `
     }
   }
 } as const

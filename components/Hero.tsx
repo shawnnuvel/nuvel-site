@@ -11,7 +11,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-50 border border-accent-200 text-accent-800 text-sm font-medium mb-8">
             <div className="w-2 h-2 bg-accent-500 rounded-full mr-2"></div>
-            24h SLA with fee credits
+            Data cut-off: 2024-12-31
           </div>
 
           {/* Headline */}
