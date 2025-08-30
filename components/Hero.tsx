@@ -8,11 +8,7 @@ export function Hero() {
     <section className="pt-20 pb-16 lg:pt-28 lg:pb-24 bg-gradient-to-b from-white to-primary-50">
       <Container>
         <div className="text-center max-w-4xl mx-auto">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-50 border border-accent-200 text-accent-800 text-sm font-medium mb-8">
-            <div className="w-2 h-2 bg-accent-500 rounded-full mr-2"></div>
-            Data cut-off: 2024-12-31
-          </div>
+
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-900 leading-tight mb-6 text-balance">

@@ -1,7 +1,7 @@
 export const copy = {
   hero: {
     title: 'Find pre-formed teams before they announce',
-    subtitle: 'One-off spinout reports for Corporate Venture & Corp Dev. Data cut-off: 2024-12-31. 48 hours.',
+    subtitle: 'Spinout reports for Corporate Venture and Corporate Development Teams in 48 hours.',
     outcomeRow: '',
     primaryCTA: 'Get a sample report',
     secondaryCTA: 'See a redacted sample',
@@ -15,17 +15,17 @@ export const copy = {
       {
         number: '1',
         title: 'Pick your scope',
-        description: 'Choose a theme (e.g., Vision/AR, AI infra) and anchor employers.'
+        description: 'Choose a theme (eg, Vision/AR, AI infra)'
       },
       {
         number: '2',
         title: 'We detect pods',
-        description: 'We find small groups who actually worked together (≥90 days overlap, dense ties), then filter layoff spikes and add patent/role evidence.'
+        description: 'We find small clusters of people who actually worked together, adding patent/role evidence (if available)'
       },
       {
         number: '3',
-        title: 'You contact first',
-        description: 'We deliver a one-off, Data cut-off labeled report (PDF + CSV) you can attach and act on immediately.'
+        title: 'Actionable insights delivered',
+        description: 'We deliver a report (PDF + CSV) you can attach and act on immediately.'
       }
     ]
   },
@@ -48,7 +48,7 @@ export const copy = {
       },
       {
         title: 'Methodology & definitions',
-        description: 'Thresholds, layoff guard, and Data cut-off: 2024-12-31.'
+        description: 'Thresholds, layoff guard, and data sources.'
       },
       {
         title: 'Compliance',
@@ -68,7 +68,7 @@ export const copy = {
 
   pricing: {
     title: 'Pricing',
-    subtitle: 'One-off, no subscription. Reports include "Data cut-off: 2024-12-31."',
+    subtitle: 'One-off, no subscription.',
     packages: [
       {
         title: 'Baseline',
@@ -113,8 +113,8 @@ export const copy = {
     title: 'FAQ',
     items: [
       {
-        question: 'Why "Data cut-off: 2024-12-31"?',
-        answer: 'It marks the latest date included. Your report is a point-in-time analysis you can attach and cite.'
+        question: 'What data sources do you use?',
+        answer: 'We use historical public web sources to identify team overlaps and provide supporting evidence for your sourcing decisions.'
       },
       {
         question: 'How is this different from "stealth keyword" searches?',

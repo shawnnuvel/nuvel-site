@@ -67,7 +67,7 @@ export default function SamplePage() {
                     'Executive Summary with top pods ranked',
                     'Pod Cards with overlaps and craft evidence',
                     'CSV export with confidence scores',
-                    'Methodology and Data cut-off: 2024-12-31',
+                    'Methodology and data sources',
                     'Compliance attestations'
                   ].map((item, index) => (
                     <div key={index} className="flex items-center">

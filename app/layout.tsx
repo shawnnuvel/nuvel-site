@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Spinout Origins Baseline — Pre-formed Team Detection | Nuvel',
-  description: 'One-off, Data cut-off labeled spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
+  description: 'One-off spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
   keywords: ['spinout detection', 'corporate venture', 'corp dev', 'team analysis', 'founder pods'],
   authors: [{ name: 'Nuvel' }],
   creator: 'Nuvel',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: '/',
     title: 'Spinout Origins Baseline — Pre-formed Team Detection | Nuvel',
-    description: 'One-off, Data cut-off labeled spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
+    description: 'One-off spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
     siteName: 'Spinout Origins Baseline',
     images: [
       {
