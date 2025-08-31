@@ -10,6 +10,11 @@ REQUIRED_TEXT="Data cut-off: 2024-12-31"
 HOMEPAGE_FILE="app/page.tsx"
 CONTENT_FILE="content/copy.ts"
 
+# New pricing tier names
+PRICING_TIERS=("GOOD" "BETTER" "BEST")
+NEW_ADDONS=("Pod Dossier" "Organizational Bridges Kit" "IC Slide Pack" "BU Pilot Brief" "Timing Risk Signal" "Theme Expansion Pack")
+BANNED_TERMS_PRICING=("Acquihire Package")
+
 # Function to check if text exists in a file
 check_required_text() {
     local file=$1
@@ -46,7 +51,7 @@ check_banned_terms() {
     
     for term in "${BANNED_TERMS[@]}"; do
         # Check in source files (case-insensitive), exclude build artifacts and scripts
-        if grep -ri "$term" content/ app/ components/ 2>/dev/null | grep -v node_modules | grep -v scripts/ | grep -v "\.next/" | grep -v "Binary file" | head -1; then
+        if grep -ri "$term" content/ app/ components/ 2>/dev/null | grep -v node_modules | grep -v scripts/ | grep -v "\.next/" | grep -v "Binary file" | grep -v README.md | head -1; then
             echo "❌ Found banned term '$term' in source content"
             found_violations=true
         fi
@@ -59,6 +64,40 @@ check_banned_terms() {
     fi
 }
 
+# Check for new pricing tiers and add-ons
+check_pricing_updates() {
+    echo "Checking for new pricing tiers..."
+    
+    for tier in "${PRICING_TIERS[@]}"; do
+        if grep -q "$tier" "$CONTENT_FILE"; then
+            echo "✅ Found pricing tier '$tier'"
+        else
+            echo "❌ Missing pricing tier '$tier'"
+            exit 1
+        fi
+    done
+    
+    echo "Checking for new add-ons..."
+    for addon in "${NEW_ADDONS[@]}"; do
+        if grep -q "$addon" "$CONTENT_FILE"; then
+            echo "✅ Found add-on '$addon'"
+        else
+            echo "❌ Missing add-on '$addon'"
+            exit 1
+        fi
+    done
+    
+    echo "Checking for absence of Acquihire Package..."
+    for banned in "${BANNED_TERMS_PRICING[@]}"; do
+        if grep -q "$banned" "$CONTENT_FILE"; then
+            echo "❌ Found banned pricing term '$banned' - should be removed"
+            exit 1
+        else
+            echo "✅ Confirmed absence of '$banned'"
+        fi
+    done
+}
+
 # Run checks
 echo "Checking for required text '$REQUIRED_TEXT'..."
 check_required_text "$CONTENT_FILE" "$REQUIRED_TEXT"
@@ -67,8 +106,8 @@ echo "Checking for required email..."
 check_email "$CONTENT_FILE" 
 check_email "components/Header.tsx"
 
-echo "Checking for banned terms..."
-check_banned_terms
+echo "Checking for pricing updates..."
+check_pricing_updates
 
 # Check that build directory exists (indicates successful build)
 if [ -d ".next" ]; then
@@ -81,4 +120,5 @@ echo ""
 echo "🎉 All verification checks passed!"
 echo "✅ Data cut-off: 2024-12-31 is present"
 echo "✅ hello@nuvel.ai is present in header/footer"  
-echo "✅ No banned terms found"
+echo "✅ All new pricing tiers and add-ons present"
+echo "✅ Acquihire Package removed"

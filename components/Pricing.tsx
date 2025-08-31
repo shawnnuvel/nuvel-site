@@ -26,9 +26,25 @@ export function Pricing() {
               <div className="text-3xl font-bold text-accent-600 mb-2">
                 {pkg.price}
               </div>
-              <p className="text-primary-600 mb-6">
+              {pkg.savings && (
+                <p className="text-sm text-accent-600 font-medium mb-3">
+                  {pkg.savings}
+                </p>
+              )}
+              <p className="text-primary-600 mb-4">
                 {pkg.description}
               </p>
+              {pkg.includes && (
+                <p className="text-sm text-primary-700 mb-4 font-medium">
+                  Includes: {pkg.includes}
+                </p>
+              )}
+              <p className="text-xs text-primary-500 mb-6 italic">
+                {pkg.tagline}
+              </p>
+              <button className="w-full px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors">
+                {pkg.cta}
+              </button>
             </div>
           ))}
         </div>
@@ -38,7 +54,7 @@ export function Pricing() {
           <h3 className="text-2xl font-semibold text-primary-900 mb-8 text-center">
             Add-ons
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {copy.pricing.addOns.map((addon) => (
               <div key={addon.title} className="card p-6 text-center">
                 <h4 className="text-lg font-semibold text-primary-900 mb-1">

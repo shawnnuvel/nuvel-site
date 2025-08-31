@@ -69,41 +69,66 @@ export const copy = {
   pricing: {
     title: 'Pricing',
     subtitle: 'One-off, no subscription.',
+    // 3-tier "Good-Better-Best" improves conversion and average order value. Harvard Business Review
     packages: [
       {
-        title: 'Baseline',
+        title: 'GOOD — Pods Report',
         price: '$4,000',
-        description: 'per theme/company analysis (48h)',
-        features: []
+        description: '2–5 person teams with 90+ day collaboration. Layoff-filtered. Data cut-off: 2024-12-31.',
+        tagline: 'For teams handling outreach themselves.',
+        cta: 'Get sample',
+        savings: undefined,
+        includes: undefined
       },
       {
-        title: '3-Pack',
-        price: '$10,000',
-        description: '(prepay)',
-        features: []
+        title: 'BETTER — Scouting Bundle',
+        price: '$5,500',
+        description: 'Shortlist + warm organizational bridges for outreach.',
+        tagline: 'Default for CVC/Innovation.',
+        cta: 'Get sample',
+        includes: 'Pods Report + Organizational Bridges Kit',
+        savings: 'Saves $500 vs separate'
       },
       {
-        title: '10-Pack', 
-        price: '$25,000',
-        description: '(prepay)',
-        features: []
+        title: 'BEST — IC-Ready Bundle',
+        price: '$6,000',
+        description: 'Drop-in exhibits for approvals and BU buy-in.',
+        tagline: 'Default for Corporate Development.',
+        cta: 'Get sample',
+        includes: 'Pods Report + IC Slide Pack + BU Pilot Brief',
+        savings: 'Saves $500 vs separate'
       }
     ],
     addOns: [
       {
         title: 'Pod Dossier',
+        price: '$1,500',
+        description: 'Deep dive on one pod (3-page PDF + CSV).'
+      },
+      {
+        title: 'Organizational Bridges Kit',
         price: '$2,000',
-        description: 'deep dive on one pod'
+        description: 'Warm paths via mutual employers/alumni/partners (CSV).'
       },
       {
-        title: 'Intro-Path Map',
-        price: '$1,500', 
-        description: 'warm path suggestions'
+        title: 'IC Slide Pack',
+        price: '$1,000',
+        description: '5 board-ready slides (16:9).'
       },
       {
-        title: 'Acquihire Package',
-        price: '$4,000',
-        description: 'comp bands, retention risk, integration notes'
+        title: 'BU Pilot Brief',
+        price: '$1,500',
+        description: '1-page BU sponsor brief with pilot angles.'
+      },
+      {
+        title: 'Timing Risk Signal',
+        price: '$1,000',
+        description: 'Historical timing indicator for competitive interest (CSV).'
+      },
+      {
+        title: 'Theme Expansion Pack',
+        price: '$2,500',
+        description: '3–5 more pods from adjacent themes (PDF + CSV).'
       }
     ],
     guarantee: 'Money-back/credit if <2 HIGH pods in scope.'
