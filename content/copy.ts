@@ -1,7 +1,7 @@
 export const copy = {
   hero: {
     title: 'Identify Specialized Teams for Deal-sourcing',
-    subtitle: 'Data reports of niche professionals with proven collaboration within a vertical. Trusted by top Corporate Venture & Corporate Development teams.',
+    subtitle: 'Data reports of niche professionals with proven collaboration within any vertical. Trusted by top Corporate Venture & Corporate Development teams.',
     outcomeRow: '',
     primaryCTA: 'Get a sample report',
     secondaryCTA: '',
@@ -25,7 +25,7 @@ export const copy = {
       {
         number: '3',
         title: 'What\'s delivered',
-        description: 'Report + Pod card that produces immediate and actionable data'
+        description: 'Report + Pod card with immediate and actionable data'
       }
     ]
   },
