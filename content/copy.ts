@@ -14,18 +14,18 @@ export const copy = {
     items: [
       {
         number: '1',
-        title: 'Pick your scope',
-        description: 'Choose your search parameters: vertical (eg, Robotics, AI, Biotech), anchor employers (eg, OpenAI, AWS), geography, roles.'
+        title: 'Set your scope',
+        description: 'Choose your vertical (e.g., AI infra, robotics), anchor employer(s), region(s), and roles.'
       },
       {
         number: '2',
-        title: 'Pods detection',
-        description: 'Nuvel uses a graph of ~800+M employment stint data points to surface clusters of people with documented co-employment and/or co-created patents'
+        title: 'We detect proven teams',
+        description: 'Nuvel runs proprietary graph algorithms across ~800+M employment-stint records to surface thematic clusters of co-work with patent/role evidence (if available).'
       },
       {
         number: '3',
-        title: 'What\'s delivered',
-        description: 'Report + Pod card with immediate and actionable data'
+        title: 'You get the exhibit',
+        description: 'Board-ready report + pod cards in 48h (24h rush). Each pod shows dates, confidence, and a data freshness band.'
       }
     ]
   },
@@ -68,7 +68,7 @@ export const copy = {
 
   pricing: {
     title: 'Pricing',
-    subtitle: 'One-off reports. No subscription. 48-hour delivery.',
+    subtitle: 'Reports on demand. No subscriptions. 24 to 48-hour delivery.',
     // 3-tier "Good-Better-Best" improves conversion and average order value. Harvard Business Review
     packages: [
       {
