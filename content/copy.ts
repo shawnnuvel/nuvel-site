@@ -155,6 +155,16 @@ export const copy = {
       {
         question: 'How fast is delivery?',
         answer: '48 hours for the Baseline. Add-ons can extend by 1–2 days.'
+      },
+      {
+        question: 'Do you offer any guarantees?',
+        answer: `If your defined scope yields fewer than 2 high-confidence teams, you can opt for a full refund or a re-run on an adjacent theme.
+
+Scope = theme, 3–6 anchor employers, region(s), roles, team size 2–5
+High-confidence = day-level dates for all members, ≥90-day co-work at the same employer, dense connections (≥0.50), layoff spikes excluded, patent/role evidence.
+
+Claim within 5 days of delivery at hello@nuvel.ai.
+Exclusions: Scopes changed after intake, outside intake limits, or unrelated requests.`
       }
     ]
   },
@@ -171,6 +181,19 @@ export const copy = {
 
   compliance: {
     text: 'Based on historical public web sources. Supporting evidence only. Client owns decisions.'
+  },
+
+  guarantee: {
+    short: 'If your scope returns <2 high-confidence teams: full refund or free re-run.',
+    full: `Results Guarantee
+If your defined scope yields fewer than 2 high-confidence teams, you choose: full refund or a free re-run on an adjacent theme.
+
+Scope = theme, 3–6 anchor employers, region(s), roles, team size 2–5
+High-confidence = day-level dates for all members, ≥90-day co-work at the same employer, dense connections (≥0.50), layoff spikes excluded, patent/role evidence.
+
+Claim within 5 days of delivery at hello@nuvel.ai.
+Exclusions: scopes changed after intake, outside intake limits, or unrelated requests.`,
+    scopeHelper: 'Scope = theme, 3–6 anchor employers, region(s), roles, team size 2–5.'
   },
 
   // Page-specific content

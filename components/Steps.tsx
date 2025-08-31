@@ -35,7 +35,7 @@ export function Steps() {
 
         {/* Steps grid */}
         <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
-          {copy.steps.items.map((step, index) => (
+          {copy.steps.items.map((step: any, index: number) => (
             <div key={step.number} className="relative">
               {/* Step number and icon */}
               <div className="flex items-center justify-center w-16 h-16 bg-accent-100 text-accent-600 rounded-2xl mb-6 mx-auto md:mx-0">

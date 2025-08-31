@@ -27,8 +27,8 @@ export function FAQ() {
 
         {/* FAQ items */}
         <div className="max-w-3xl mx-auto space-y-4">
-          {copy.faq.items.map((item, index) => (
-            <div key={index} className="card overflow-hidden">
+          {copy.faq.items.map((item: any, index: number) => (
+            <div key={index} className={`card overflow-hidden ${item.question === 'Do you offer any guarantees?' ? 'scroll-mt-20' : ''}`} id={item.question === 'Do you offer any guarantees?' ? 'guarantee' : undefined}>
               <button
                 onClick={() => toggleItem(index)}
                 className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-primary-25 transition-colors"

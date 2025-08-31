@@ -51,7 +51,7 @@ export function Benefits() {
 
         {/* Benefits grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {copy.benefits.items.map((benefit, index) => (
+          {copy.benefits.items.map((benefit: any, index: number) => (
             <div key={benefit.title} className="card p-8 card-hover">
               {/* Icon */}
               <div className="inline-flex items-center justify-center w-12 h-12 bg-accent-100 text-accent-600 rounded-xl mb-6">
@@ -75,7 +75,7 @@ export function Benefits() {
             {copy.method.title}
           </h3>
           <div className="space-y-4 max-w-4xl mx-auto">
-            {copy.method.items.map((item, index) => (
+            {copy.method.items.map((item: any, index: number) => (
               <div key={index} className="flex items-start">
                 <div className="inline-flex items-center justify-center w-6 h-6 bg-accent-100 text-accent-600 rounded-full mr-4 mt-0.5 flex-shrink-0">
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">

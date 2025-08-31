@@ -113,6 +113,9 @@ Theme: ${formData.theme}`
                 placeholder="e.g., Vision/AR, AI infra, Robotics, Biotech"
                 className="w-full px-4 py-3 border border-primary-200 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors"
               />
+              <p className="text-xs text-primary-500 mt-1">
+                {copy.guarantee.scopeHelper}
+              </p>
             </div>
 
             <button

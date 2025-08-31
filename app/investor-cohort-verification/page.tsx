@@ -65,7 +65,7 @@ export default function InvestorCohortVerificationPage() {
                 </h2>
                 
                 <div className="space-y-6">
-                  {copy.pages.cohort.features.map((feature, index) => (
+                  {copy.pages.cohort.features.map((feature: any, index: number) => (
                     <div key={feature.title} className="flex items-start">
                       <div className="flex-shrink-0 w-6 h-6 bg-accent-600 rounded-full flex items-center justify-center mr-4 mt-1">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,7 +108,7 @@ export default function InvestorCohortVerificationPage() {
             </div>
 
             <div className="space-y-6">
-              {copy.pages.cohort.process.map((step, index) => (
+              {copy.pages.cohort.process.map((step: any, index: number) => (
                 <div key={index} className="flex items-center">
                   <div className="flex-shrink-0 w-8 h-8 bg-accent-600 text-white rounded-full flex items-center justify-center font-semibold mr-6">
                     {index + 1}

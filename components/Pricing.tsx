@@ -22,7 +22,7 @@ export function Pricing() {
 
         {/* Main packages */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {copy.pricing.packages.map((pkg, index) => (
+          {copy.pricing.packages.map((pkg: any, index: number) => (
             <div key={pkg.title} className={`card p-8 text-center card-hover relative ${pkg.popular ? 'bg-accent-50 border-accent-200' : ''}`}>
               {pkg.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -57,7 +57,7 @@ export function Pricing() {
             Add-ons
           </h3>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            {copy.pricing.addOns.map((addon) => (
+            {copy.pricing.addOns.map((addon: any) => (
               <div key={addon.title} className="card p-6 text-center">
                 <h4 className="text-lg font-semibold text-primary-900 mb-1">
                   {addon.title}
@@ -78,7 +78,7 @@ export function Pricing() {
               More add-ons (3)
             </summary>
             <div className="grid md:grid-cols-3 gap-6">
-              {copy.pricing.moreAddOns.map((addon) => (
+              {copy.pricing.moreAddOns.map((addon: any) => (
                 <div key={addon.title} className="card p-6 text-center">
                   <h4 className="text-lg font-semibold text-primary-900 mb-1">
                     {addon.title}
@@ -100,9 +100,15 @@ export function Pricing() {
           <div className="text-lg font-semibold text-accent-700 mb-2">
             Guarantee
           </div>
-          <p className="text-accent-700">
-            {copy.pricing.guarantee}
+          <p className="text-accent-700 mb-3">
+            {copy.guarantee.short}
           </p>
+          <a 
+            href="/#faq" 
+            className="text-sm text-accent-600 hover:text-accent-700 underline"
+          >
+            Learn more
+          </a>
         </div>
       </Container>
     </section>
