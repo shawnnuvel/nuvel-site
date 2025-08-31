@@ -20,7 +20,7 @@ export const copy = {
       {
         number: '2',
         title: 'We detect proven teams',
-        description: 'Nuvel runs proprietary graph algorithms across ~800+M employment-stint records to surface thematic clusters of co-work with patent/role evidence (if available).'
+        description: 'Nuvel runs proprietary graph algorithms across ~800+M employment-stint records to surface thematic clusters of professionals with co-work experience and patent/role evidence (if available).'
       },
       {
         number: '3',

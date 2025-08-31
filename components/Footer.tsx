@@ -13,9 +13,6 @@ export function Footer() {
             {/* Logo and company info */}
             <div className="flex flex-col space-y-4 max-w-md">
               <Logo />
-              <p className="text-sm text-primary-600 leading-relaxed">
-                Spinout Origins Baseline — Pre-formed Team Detection
-              </p>
             </div>
 
             {/* Quick links */}
