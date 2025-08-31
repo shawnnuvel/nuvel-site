@@ -68,53 +68,52 @@ export const copy = {
 
   pricing: {
     title: 'Pricing',
-    subtitle: 'One-off, no subscription.',
+    subtitle: 'One-off reports. No subscription. 48-hour delivery.',
     // 3-tier "Good-Better-Best" improves conversion and average order value. Harvard Business Review
     packages: [
       {
         title: 'GOOD — Pods Report',
         price: '$4,000',
-        description: '2–5 person teams with 90+ day collaboration. Layoff-filtered. Data cut-off: 2024-12-31.',
-        tagline: 'For teams handling outreach themselves.',
+        description: '2–5 person teams with proven collaboration.',
         cta: 'Get sample',
-        savings: undefined,
-        includes: undefined
+        plan: 'good',
+        popular: false
       },
       {
         title: 'BETTER — Scouting Bundle',
         price: '$5,500',
-        description: 'Shortlist + warm organizational bridges for outreach.',
-        tagline: 'Default for CVC/Innovation.',
+        description: 'Pods + warm organizational bridges.',
         cta: 'Get sample',
-        includes: 'Pods Report + Organizational Bridges Kit',
-        savings: 'Saves $500 vs separate'
+        plan: 'better',
+        popular: true
       },
       {
         title: 'BEST — IC-Ready Bundle',
         price: '$6,000',
-        description: 'Drop-in exhibits for approvals and BU buy-in.',
-        tagline: 'Default for Corporate Development.',
+        description: 'Pods + board slides + pilot brief.',
         cta: 'Get sample',
-        includes: 'Pods Report + IC Slide Pack + BU Pilot Brief',
-        savings: 'Saves $500 vs separate'
+        plan: 'best',
+        popular: false
       }
     ],
     addOns: [
       {
         title: 'Pod Dossier',
         price: '$1,500',
-        description: 'Deep dive on one pod (3-page PDF + CSV).'
+        description: 'Deep dive on one pod.'
       },
       {
         title: 'Organizational Bridges Kit',
         price: '$2,000',
-        description: 'Warm paths via mutual employers/alumni/partners (CSV).'
+        description: 'Warm paths via mutual connections.'
       },
       {
         title: 'IC Slide Pack',
         price: '$1,000',
-        description: '5 board-ready slides (16:9).'
-      },
+        description: '5 board-ready slides.'
+      }
+    ],
+    moreAddOns: [
       {
         title: 'BU Pilot Brief',
         price: '$1,500',

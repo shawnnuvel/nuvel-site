@@ -1,6 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
 import { Container } from './Container'
-import { CTAGroup } from './CTAGroup'
 import { copy } from '@/content/copy'
 
 export function Hero() {
@@ -24,12 +24,13 @@ export function Hero() {
 
           {/* CTA */}
           <div className="flex justify-center">
-            <a
-              href={copy.hero.primaryCTA === 'Get a sample report' ? 'mailto:hello@nuvel.ai?subject=Sample request - Nuvel pods report&body=Chosen vertical:%0ATarget companies:%0ACountry:' : '#'}
+            <Link
+              href="/sample"
               className="inline-flex items-center px-8 py-4 rounded-lg bg-accent-500 hover:bg-accent-600 text-white font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+              aria-label="Get a sample report"
             >
               {copy.hero.primaryCTA}
-            </a>
+            </Link>
           </div>
         </div>
       </Container>
