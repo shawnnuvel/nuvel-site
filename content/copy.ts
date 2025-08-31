@@ -137,6 +137,10 @@ export const copy = {
     title: 'FAQ',
     items: [
       {
+        question: 'How fresh is our data?',
+        answer: 'We work from a single, reproducible snapshot so your results are consistent. Current data cut-off: **2024-12-31**. Overlap math uses the actual employment dates (event time), and every Pod Card shows pod-level freshness (median + band) so you can judge recency at a glance. We release newer snapshots (e.g., R2025.06) once coverage is stable.'
+      },
+      {
         question: 'What data sources do you use?',
         answer: 'We use historical public web sources to identify team overlaps and provide supporting evidence for your sourcing decisions.'
       },
