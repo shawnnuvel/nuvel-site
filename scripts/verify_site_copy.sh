@@ -16,7 +16,7 @@ NEW_ADDONS=("Pod Dossier" "Organizational Bridges Kit" "IC Slide Pack" "BU Pilot
 BANNED_TERMS_PRICING=("Acquihire Package")
 
 # FAQ checks
-FAQ_TITLES=("How fresh is our data?")
+FAQ_TITLES=("How fresh is your data?")
 
 # Function to check if text exists in a file
 check_required_text() {
@@ -150,4 +150,4 @@ echo "✅ Data cut-off: 2024-12-31 is present"
 echo "✅ hello@nuvel.ai is present in header/footer"  
 echo "✅ All new pricing tiers and add-ons present"
 echo "✅ Acquihire Package removed"
-echo "✅ New FAQ item 'How fresh is our data?' present"
+echo "✅ New FAQ item 'How fresh is your data?' present"

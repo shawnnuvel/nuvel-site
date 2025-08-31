@@ -1,6 +1,6 @@
 export const copy = {
   hero: {
-    title: 'Identify Specialized Teams for Deal-sourcing',
+    title: 'Identify Specialized Teams for Deal-Sourcing',
     subtitle: 'Data reports of niche professionals with proven collaboration within any vertical. Trusted by top Corporate Venture & Corporate Development teams.',
     outcomeRow: '',
     primaryCTA: 'Get a sample report',
@@ -137,7 +137,7 @@ export const copy = {
     title: 'FAQ',
     items: [
       {
-        question: 'How fresh is our data?',
+        question: 'How fresh is your data?',
         answer: 'We work from a single, reproducible snapshot so your results are consistent. Current data cut-off: **2024-12-31**. Overlap math uses the actual employment dates (event time), and every Pod Card shows pod-level freshness (median + band) so you can judge recency at a glance. We release newer snapshots (e.g., R2025.06) once coverage is stable.'
       },
       {
