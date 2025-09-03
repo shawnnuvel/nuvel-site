@@ -18,7 +18,7 @@ export function ContactForm() {
     rush: false,
     notes: ''
   })
-  const [selectedPlan, setSelectedPlan] = useState<string>('scout')
+  const [selectedPlan, setSelectedPlan] = useState<string>('pods')
   const [selectedAddOns, setSelectedAddOns] = useState<string[]>([])
   const [totalPrice, setTotalPrice] = useState(4000)
 
@@ -27,7 +27,7 @@ export function ContactForm() {
     if (typeof window === 'undefined') return
     const params = new URLSearchParams(window.location.hash.split('?')[1] || window.location.search)
     const plan = params.get('plan')
-    if (plan && ['scout', 'ic-ready', 'custom'].includes(plan)) {
+    if (plan && ['pods', 'custom'].includes(plan)) {
       setSelectedPlan(plan)
     }
   }, [])
@@ -77,7 +77,7 @@ export function ContactForm() {
           {/* Plan selection */}
           <div className="mb-8 p-6 bg-primary-50 rounded-lg">
             <h3 className="text-lg font-semibold text-primary-900 mb-4">Selected Plan</h3>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               {pricingPlans.map((plan) => (
                 <button
                   key={plan.id}

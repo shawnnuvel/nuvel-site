@@ -59,70 +59,10 @@ export const copy = {
   },
 
   pricing: {
-    title: 'Pricing',
-    subtitle: 'On-demand reports. No subscriptions. 24–48h delivery.',
-    // 3-tier "Good-Better-Best" improves conversion and average order value. Harvard Business Review
-    packages: [
-      {
-        title: 'GOOD — Pods Report',
-        price: '$4,000',
-        description: '2–5 person teams with proven collaboration.',
-        cta: 'Get sample',
-        plan: 'good',
-        popular: false
-      },
-      {
-        title: 'BETTER — Scouting Bundle',
-        price: '$5,500',
-        description: 'Pods + warm organizational bridges.',
-        cta: 'Get sample',
-        plan: 'better',
-        popular: true
-      },
-      {
-        title: 'BEST — IC-Ready Bundle',
-        price: '$6,000',
-        description: 'Pods + board slides + pilot brief.',
-        cta: 'Get sample',
-        plan: 'best',
-        popular: false
-      }
-    ],
-    addOns: [
-      {
-        title: 'Pod Dossier',
-        price: '$1,500',
-        description: 'Deep dive on one pod.'
-      },
-      {
-        title: 'Organizational Bridges Kit',
-        price: '$2,000',
-        description: 'Warm paths via mutual connections.'
-      },
-      {
-        title: 'IC Slide Pack',
-        price: '$1,000',
-        description: '5 board-ready slides.'
-      }
-    ],
-    moreAddOns: [
-      {
-        title: 'BU Pilot Brief',
-        price: '$1,500',
-        description: '1-page BU sponsor brief with pilot angles.'
-      },
-      {
-        title: 'Timing Risk Signal',
-        price: '$1,000',
-        description: 'Historical timing indicator for competitive interest (CSV).'
-      },
-      {
-        title: 'Theme Expansion Pack',
-        price: '$2,500',
-        description: '3–5 more pods from adjacent themes (PDF + CSV).'
-      }
-    ],
-    guarantee: 'Money-back/credit if <2 HIGH pods in scope.'
+    title: 'On-demand reports. No subscriptions. 24–48h delivery.',
+    subtitle: '',
+    guarantee: 'If your agreed scope yields fewer than the guaranteed number of HIGH-confidence pods, you choose: a full refund or a no-cost re-run with adjusted scope. (HIGH-confidence = 2–5 people, same employer, ≥90 days overlap, density ≥50%, passes layoff-timing filter; contractors/interns excluded. Role/patent evidence included when available.)',
+    compliance: 'Based on historical public web sources. Supporting evidence only. Client owns decisions. Data cut-off: 2024-12-31.'
   },
 
   faq: {

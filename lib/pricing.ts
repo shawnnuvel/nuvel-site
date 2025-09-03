@@ -15,6 +15,7 @@ export interface PricingPlan {
   turnaround: string
   rushCost?: number
   bestFor: string
+  recommended?: boolean
 }
 
 export interface AddOn {
@@ -26,9 +27,9 @@ export interface AddOn {
 
 export const pricingPlans: PricingPlan[] = [
   {
-    id: 'scout',
-    name: 'Scout',
-    subtitle: 'best for CVC',
+    id: 'pods',
+    name: 'Pods Report',
+    subtitle: 'US$4,000',
     price: 4000,
     scope: {
       themes: 1,
@@ -41,29 +42,13 @@ export const pricingPlans: PricingPlan[] = [
     },
     turnaround: '48h',
     rushCost: 1000,
-    bestFor: 'CVC'
-  },
-  {
-    id: 'ic-ready',
-    name: 'IC-Ready',
-    subtitle: 'best for Corp-Dev',
-    price: 6500,
-    scope: {
-      themes: 2,
-      anchors: 8,
-      regions: 2
-    },
-    output: {
-      pods: 5,
-      includes: ['PDF + CSV', '1-slide summary per pod formatted for IC use']
-    },
-    turnaround: '48h',
-    bestFor: 'Corp-Dev'
+    bestFor: 'Teams scouting investable pods in a narrow thesis.',
+    recommended: true
   },
   {
     id: 'custom',
     name: 'Custom Thesis',
-    subtitle: 'from',
+    subtitle: 'from US$9,000',
     price: 9000,
     scope: {
       themes: 3,
@@ -72,10 +57,11 @@ export const pricingPlans: PricingPlan[] = [
     },
     output: {
       pods: 7,
-      includes: ['IC-Ready + Theme Expansion (adjacent areas)']
+      includes: ['PDF + CSV', 'IC slide per pod', 'Theme Expansion included']
     },
     turnaround: '3 business days',
-    bestFor: 'Custom'
+    bestFor: 'Broader canvasses or specialty tech areas.',
+    recommended: false
   }
 ]
 

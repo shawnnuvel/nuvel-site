@@ -28,12 +28,12 @@ export function CTAGroup({
     )}>
       {/* Primary CTA */}
       <a
-        href="/#contact?plan=scout"
+        href="/#contact?plan=pods"
         className={cn(
           'btn-primary w-full sm:w-auto',
           sizeClasses[size]
         )}
-        aria-label="Get a report — Scout"
+        aria-label="Get a report — Pods Report"
       >
         {primaryText}
       </a>

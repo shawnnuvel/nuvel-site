@@ -98,9 +98,9 @@ export function Header() {
           {/* CTA */}
           <div className="flex items-center space-x-4">
             <a
-              href="/#contact?plan=scout"
+              href="/#contact?plan=pods"
               className="btn-primary text-sm hidden sm:inline-flex"
-              aria-label="Get a report — Scout"
+              aria-label="Get a report — Pods Report"
             >
               Get a report
             </a>
