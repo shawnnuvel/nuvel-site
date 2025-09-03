@@ -1,11 +1,11 @@
 export const copy = {
   hero: {
-    title: 'Identify specialized teams for strategic investments',
-    subtitle: 'Evidence-based pod reports (2–5 people) with verified co-work history. Delivered in 24–48 hours. Data cut-off: 2024-12-31.',
+    title: 'Identify Specialized Teams for Deal-Sourcing',
+    subtitle: 'Data insights built via mapping close to a billion employment stint records to surface teams with proven collaboration',
     outcomeRow: '',
-    primaryCTA: 'Get sample',
-    secondaryCTA: 'How it works',
-    trustLine: ''
+    primaryCTA: 'Get a report',
+    secondaryCTA: '',
+    trustLine: 'Trusted by top Corporate Venture and Corporate Development Teams'
   },
 
   steps: {
@@ -20,7 +20,7 @@ export const copy = {
       {
         number: '2',
         title: 'We detect proven teams',
-        description: 'Nuvel runs proprietary graph algorithms across ~800+M employment-stint records to surface thematic clusters of professionals with co-work experience and patent/role evidence (if available).'
+        description: 'Nuvel runs proprietary graph algorithms across close to 1 billion employment-stint records to surface thematic clusters of professionals with co-work experience and patent/role evidence (if available).'
       },
       {
         number: '3',
@@ -40,7 +40,7 @@ export const copy = {
       },
       {
         title: 'Names + identity anchors',
-        description: 'Nuvel Person ID, headline snippet, last two employers, country/city.'
+        description: 'Full name, public identifier, city/country'
       },
       {
         title: 'PDF + CSV',

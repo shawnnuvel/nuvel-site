@@ -33,7 +33,7 @@ export function CTAGroup({
           'btn-primary w-full sm:w-auto',
           sizeClasses[size]
         )}
-        aria-label="Get a sample — Scout"
+        aria-label="Get a report — Scout"
       >
         {primaryText}
       </a>

@@ -43,9 +43,9 @@ export function Pricing() {
               <Link 
                 href={`/#contact?plan=${plan.id}`}
                 className="w-full px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors inline-block text-center"
-                aria-label={`Get sample — ${plan.name}`}
+                aria-label={`Get a report — ${plan.name}`}
               >
-                Get sample
+                Get a report
               </Link>
               <div className="mt-3">
                 <Link 

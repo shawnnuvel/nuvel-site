@@ -100,9 +100,9 @@ export function Header() {
             <a
               href="/#contact?plan=scout"
               className="btn-primary text-sm hidden sm:inline-flex"
-              aria-label="Get a sample — Scout"
+              aria-label="Get a report — Scout"
             >
-              Get sample
+              Get a report
             </a>
           </div>
         </div>

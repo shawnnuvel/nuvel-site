@@ -20,23 +20,23 @@ export function Hero() {
             {copy.hero.subtitle}
           </p>
 
+          {/* Trust line */}
+          {copy.hero.trustLine && (
+            <p className="text-lg text-primary-500 mb-8 font-medium">
+              {copy.hero.trustLine}
+            </p>
+          )}
+
 
 
           {/* CTA */}
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center">
             <Link
               href="/#contact?plan=scout"
               className="inline-flex items-center px-8 py-4 rounded-lg bg-accent-500 hover:bg-accent-600 text-white font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-              aria-label="Get a sample — Scout"
+              aria-label="Get a report — Scout"
             >
-              Get sample
-            </Link>
-            <Link
-              href="/#how-it-works"
-              className="inline-flex items-center px-8 py-4 rounded-lg bg-white border border-primary-200 text-primary-800 hover:bg-primary-50 font-semibold text-lg transition-colors duration-200"
-              aria-label="How it works"
-            >
-              How it works
+              {copy.hero.primaryCTA}
             </Link>
           </div>
         </div>
