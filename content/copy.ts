@@ -1,10 +1,10 @@
 export const copy = {
   hero: {
-    title: 'Identify Specialized Teams for Deal-Sourcing',
-    subtitle: 'Data reports of niche professionals with proven collaboration within any vertical. Trusted by top Corporate Venture & Corporate Development teams.',
+    title: 'Identify specialized teams for strategic investments',
+    subtitle: 'Evidence-based pod reports (2–5 people) with verified co-work history. Delivered in 24–48 hours. Data cut-off: 2024-12-31.',
     outcomeRow: '',
-    primaryCTA: 'Get a sample report',
-    secondaryCTA: '',
+    primaryCTA: 'Get sample',
+    secondaryCTA: 'How it works',
     trustLine: ''
   },
 
@@ -31,28 +31,20 @@ export const copy = {
   },
 
   benefits: {
-    title: 'What\'s inside the report',
+    title: 'What\'s inside',
     subtitle: '',
     items: [
       {
-        title: 'Executive Summary (1 page)',
-        description: 'Top pods ranked with short reasons.'
+        title: 'Verified pods (2–5)',
+        description: 'With ≥90-day overlap, team-density score, layoff-filter status.'
       },
       {
-        title: 'Pod Cards (1 page each)',
-        description: 'Initials or full names, roles then/now, overlap periods, craft evidence (patents/role), confidence (HIGH/MED), and why it matters.'
+        title: 'Names + identity anchors',
+        description: 'Nuvel Person ID, headline snippet, last two employers, country/city.'
       },
       {
-        title: 'CSV export',
-        description: 'Pod rows with date fields, confidence, and assumptions.'
-      },
-      {
-        title: 'Methodology & definitions',
-        description: 'Thresholds, layoff guard, and data sources.'
-      },
-      {
-        title: 'Compliance',
-        description: 'Based on historical public web sources. Supporting evidence only. Client owns decisions.'
+        title: 'PDF + CSV',
+        description: 'Clear "How to read this" page, 24–48h turnaround.'
       }
     ]
   },
@@ -68,7 +60,7 @@ export const copy = {
 
   pricing: {
     title: 'Pricing',
-    subtitle: 'Reports on demand. No subscriptions. 24 to 48-hour delivery.',
+    subtitle: 'On-demand reports. No subscriptions. 24–48h delivery.',
     // 3-tier "Good-Better-Best" improves conversion and average order value. Harvard Business Review
     packages: [
       {
@@ -137,34 +129,28 @@ export const copy = {
     title: 'FAQ',
     items: [
       {
-        question: 'How fresh is your data?',
-        answer: 'We work from a single, reproducible snapshot so your results are consistent. Current data cut-off: **2024-12-31**. Overlap math uses the actual employment dates (event time), and every Pod Card shows pod-level freshness (median + band) so you can judge recency at a glance. We release newer snapshots (e.g., R2025.06) once coverage is stable.'
+        question: 'How fresh is the data?',
+        answer: 'We analyze historical records through Data cut-off: **2024-12-31** for repeatability. Some profiles are fresher, some older. We focus on evidence of past collaboration (team chemistry), not real-time tracking.'
       },
       {
-        question: 'What data sources do you use?',
-        answer: 'We use historical public web sources to identify team overlaps and provide supporting evidence for your sourcing decisions.'
+        question: 'What is a "high-confidence team"?',
+        answer: '2–5 people who worked together 90+ days, with over half of teammate pairs overlapping in the same org/time window, day-precise dates, and no mass-layoff timing.'
       },
       {
-        question: 'Is this a legal verification or background check?',
-        answer: 'No. It\'s supporting evidence for sourcing and strategy. You own decisions.'
+        question: 'What does "team density" mean?',
+        answer: 'Of all possible teammate pairs in a pod, the share that overlapped together in the same org/window. Higher density = tighter, real team.'
       },
       {
-        question: 'Do you cover my region/sector?',
-        answer: 'Yes—specify theme and anchors (e.g., Vision/AR; AI infra; Robotics; Biotech).'
+        question: 'Are you a background check?',
+        answer: 'No—this is historical team analysis for investment/strategy, not a consumer report.'
       },
       {
-        question: 'How fast is delivery?',
-        answer: '48 hours for the Baseline. Add-ons can extend by 1–2 days.'
+        question: 'Can you include profile links?',
+        answer: 'By default we use identity anchors. With NDA/consent, we can include public profile links.'
       },
       {
-        question: 'Do you offer any guarantees?',
-        answer: `If your defined scope yields fewer than 2 high-confidence teams, you can opt for a full refund or a re-run on an adjacent theme.
-
-Scope = theme, 3–6 anchor employers, region(s), roles, team size 2–5
-High-confidence = day-level dates for all members, ≥90-day co-work at the same employer, dense connections (≥0.50), layoff spikes excluded, patent/role evidence.
-
-Claim within 5 days of delivery at hello@nuvel.ai.
-Exclusions: Scopes changed after intake, outside intake limits, or unrelated requests.`
+        question: 'What if you find fewer pods than promised?',
+        answer: 'You choose a full refund or a free one-time re-run with widened scope.'
       }
     ]
   },

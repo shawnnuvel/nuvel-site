@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Container } from './Container'
 import { copy } from '@/content/copy'
+import { pricingPlans, addOns } from '@/lib/pricing'
 
 export function Pricing() {
   return (
@@ -16,75 +17,62 @@ export function Pricing() {
             Data cut-off: 2024-12-31
           </div>
           <p className="text-lg text-primary-600 max-w-3xl mx-auto">
-            {copy.pricing.subtitle}
+            On-demand reports. No subscriptions. 24–48h delivery.
           </p>
         </div>
 
-        {/* Main packages */}
+        {/* Trust banner */}
+        <div className="text-center mb-12 p-4 bg-primary-50 rounded-lg">
+          <p className="text-primary-700">
+            Evidence built from historical public web sources; attachable for IC. 24–48h turnaround.
+          </p>
+        </div>
+
+        {/* Main packages (three cards) */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {copy.pricing.packages.map((pkg: any, index: number) => (
-            <div key={pkg.title} className={`card p-8 text-center card-hover relative ${pkg.popular ? 'bg-accent-50 border-accent-200' : ''}`}>
-              {pkg.popular && (
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-accent-500 text-white px-4 py-1 rounded-full text-sm font-medium">
-                    Most popular
-                  </span>
-                </div>
-              )}
+          {pricingPlans.map((plan) => (
+            <div key={plan.id} className="card p-8 text-center card-hover relative">
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
-                {pkg.title}
+                {plan.name} ({plan.subtitle}) — US${plan.price.toLocaleString()}
               </h3>
-              <div className="text-3xl font-bold text-accent-600 mb-4">
-                {pkg.price}
+              <div className="text-sm text-primary-600 mb-4">
+                <p><strong>Scope:</strong> {plan.scope.themes} theme{plan.scope.themes > 1 ? 's' : ''}, up to {plan.scope.anchors} anchor employer{plan.scope.anchors > 1 ? 's' : ''}, {plan.scope.regions === 999 ? 'global' : plan.scope.regions + ' region' + (plan.scope.regions > 1 ? 's' : '')}</p>
+                <p><strong>Output:</strong> {plan.output.pods} High-confidence pods guaranteed (names visible), {plan.output.includes.join(', ')}</p>
+                <p><strong>Turnaround:</strong> {plan.turnaround}{plan.rushCost ? ` (24h rush +$${plan.rushCost.toLocaleString()})` : ''}</p>
               </div>
-              <p className="text-primary-600 mb-8">
-                {pkg.description}
-              </p>
               <Link 
-                href={`/sample?plan=${pkg.plan}`}
+                href={`/#contact?plan=${plan.id}`}
                 className="w-full px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors inline-block text-center"
-                aria-label={`Get sample — ${pkg.title}`}
+                aria-label={`Get sample — ${plan.name}`}
               >
-                {pkg.cta}
+                Get sample
               </Link>
+              <div className="mt-3">
+                <Link 
+                  href={`/scope#${plan.id}`}
+                  className="text-sm text-accent-600 hover:text-accent-700 underline"
+                >
+                  See exactly what's included
+                </Link>
+              </div>
             </div>
           ))}
         </div>
 
-        {/* Add-ons */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-primary-900 mb-8 text-center">
-            Add-ons
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
-            {copy.pricing.addOns.map((addon: any) => (
-              <div key={addon.title} className="card p-6 text-center">
-                <h4 className="text-lg font-semibold text-primary-900 mb-1">
-                  {addon.title}
-                </h4>
-                <div className="text-xl font-bold text-accent-600 mb-2">
-                  {addon.price}
-                </div>
-                <p className="text-sm text-primary-600">
-                  {addon.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          
-          {/* More add-ons */}
-          <details className="group">
-            <summary className="text-center cursor-pointer text-accent-600 hover:text-accent-700 font-medium mb-6">
-              More add-ons (3)
+        {/* Add-ons in accordion */}
+        <div className="mb-12 text-center">
+          <details className="group inline-block">
+            <summary className="cursor-pointer text-accent-600 hover:text-accent-700 font-medium">
+              See all add-ons
             </summary>
-            <div className="grid md:grid-cols-3 gap-6">
-              {copy.pricing.moreAddOns.map((addon: any) => (
-                <div key={addon.title} className="card p-6 text-center">
+            <div className="mt-6 grid md:grid-cols-3 gap-6 text-left">
+              {addOns.map((addon) => (
+                <div key={addon.id} className="card p-6 text-center">
                   <h4 className="text-lg font-semibold text-primary-900 mb-1">
-                    {addon.title}
+                    {addon.name}
                   </h4>
                   <div className="text-xl font-bold text-accent-600 mb-2">
-                    {addon.price}
+                    +${addon.price.toLocaleString()}
                   </div>
                   <p className="text-sm text-primary-600">
                     {addon.description}
@@ -95,20 +83,15 @@ export function Pricing() {
           </details>
         </div>
 
-        {/* Guarantee */}
+        {/* Guarantee (clarified) */}
         <div className="text-center p-6 bg-accent-50 rounded-lg border border-accent-200">
           <div className="text-lg font-semibold text-accent-700 mb-2">
             Guarantee
           </div>
-          <p className="text-accent-700 mb-3">
-            {copy.guarantee.short}
+          <p className="text-accent-700">
+            If your ordered scope yields fewer than the guaranteed number of High-confidence pods, you choose: a full refund or a no-cost re-run with adjusted scope.
+            High-confidence = 2–5 people, same employer, ≥90 days overlap, density ≥50%, passes layoff-timing filter; contractors/interns excluded. Role/patent evidence included when available.
           </p>
-          <a 
-            href="/#faq" 
-            className="text-sm text-accent-600 hover:text-accent-700 underline"
-          >
-            Learn more
-          </a>
         </div>
       </Container>
     </section>

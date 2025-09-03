@@ -23,13 +23,20 @@ export function Hero() {
 
 
           {/* CTA */}
-          <div className="flex justify-center">
+          <div className="flex justify-center gap-4">
             <Link
-              href="/sample"
+              href="/#contact?plan=scout"
               className="inline-flex items-center px-8 py-4 rounded-lg bg-accent-500 hover:bg-accent-600 text-white font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-              aria-label="Get a sample report"
+              aria-label="Get a sample — Scout"
             >
-              {copy.hero.primaryCTA}
+              Get sample
+            </Link>
+            <Link
+              href="/#how-it-works"
+              className="inline-flex items-center px-8 py-4 rounded-lg bg-white border border-primary-200 text-primary-800 hover:bg-primary-50 font-semibold text-lg transition-colors duration-200"
+              aria-label="How it works"
+            >
+              How it works
             </Link>
           </div>
         </div>

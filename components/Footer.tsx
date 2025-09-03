@@ -40,7 +40,7 @@ export function Footer() {
           {/* Compliance disclaimer */}
           <div className="mt-12 pt-8 border-t border-primary-200">
             <p className="text-xs text-primary-500 leading-relaxed max-w-4xl">
-              {copy.compliance.text}
+              Based on historical public web sources. Supporting evidence only. Client owns decisions. Data cut-off: 2024-12-31.
             </p>
           </div>
 

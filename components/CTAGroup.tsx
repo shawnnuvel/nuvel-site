@@ -1,7 +1,6 @@
 import React from 'react'
-import { createMailtoLink, getCalendlyUrl } from '@/lib/utils'
-import { copy } from '@/content/copy'
 import { cn } from '@/lib/utils'
+ 
 
 interface CTAGroupProps {
   primaryText: string
@@ -16,17 +15,6 @@ export function CTAGroup({
   className,
   size = 'md'
 }: CTAGroupProps) {
-  const calendlyUrl = getCalendlyUrl()
-  
-  // Email links with pre-filled templates
-  const sampleEmailLink = createMailtoLink(
-    'hello@nuvel.ai',
-    copy.emails.sampleRequest.subject,
-    copy.emails.sampleRequest.body
-  )
-
-  // Remove unused pilot link since we now link to /sample
-
   const sizeClasses = {
     sm: 'text-sm',
     md: 'text-base', 
@@ -40,22 +28,24 @@ export function CTAGroup({
     )}>
       {/* Primary CTA */}
       <a
-        href={sampleEmailLink}
+        href="/#contact?plan=scout"
         className={cn(
           'btn-primary w-full sm:w-auto',
           sizeClasses[size]
         )}
+        aria-label="Get a sample — Scout"
       >
         {primaryText}
       </a>
 
       {/* Secondary CTA */}
       <a
-        href="/sample"
+        href="/#how-it-works"
         className={cn(
           'btn-secondary w-full sm:w-auto',
           sizeClasses[size]
         )}
+        aria-label="How it works"
       >
         {secondaryText}
       </a>

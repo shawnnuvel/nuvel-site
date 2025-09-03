@@ -98,14 +98,11 @@ export function Header() {
           {/* CTA */}
           <div className="flex items-center space-x-4">
             <a
-              href={createMailtoLink(
-                'hello@nuvel.ai',
-                copy.emails.headerSampleRequest.subject,
-                copy.emails.headerSampleRequest.body
-              )}
+              href="/#contact?plan=scout"
               className="btn-primary text-sm hidden sm:inline-flex"
+              aria-label="Get a sample — Scout"
             >
-              Get a sample
+              Get sample
             </a>
           </div>
         </div>
