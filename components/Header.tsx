@@ -106,17 +106,6 @@ export function Header() {
                 Contact
               </button>
             </nav>
-
-            {/* CTA */}
-            <div className="flex items-center space-x-4">
-              <a
-                href="mailto:hello@nuvel.ai?subject=Request sample pack — Patent Expert Maps&body=Company name:%0ATechnical domain:%0ATimeline:"
-                className="btn-primary text-sm hidden sm:inline-flex"
-                aria-label="Get a report"
-              >
-                Get a report
-              </a>
-            </div>
           </div>
         </Container>
       </header>
