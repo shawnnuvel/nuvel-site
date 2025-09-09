@@ -100,6 +100,30 @@ export default function RootLayout({
             src="https://plausible.io/js/script.js"
           />
         )}
+
+        {/* Cloudflare Web Analytics (free, privacy-first) */}
+        {process.env.NEXT_PUBLIC_CFWA_TOKEN && (
+          <script 
+            defer 
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={`{"token": "${process.env.NEXT_PUBLIC_CFWA_TOKEN}"}`}
+          />
+        )}
+
+        {/* GA4 (free) basic pageview */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
+            <script dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', { anonymize_ip: true });
+              `
+            }} />
+          </>
+        )}
       </head>
       <body className="min-h-screen flex flex-col">
         {/* Skip link for accessibility */}

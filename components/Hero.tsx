@@ -30,13 +30,20 @@ export function Hero() {
 
 
           {/* CTA */}
-          <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="mailto:hello@nuvel.ai?subject=Request sample pack — Patent Expert Maps&body=Company name:%0ATechnical domain:%0ATimeline:"
+              href="#contact"
               className="inline-flex items-center px-8 py-4 rounded-lg bg-accent-500 hover:bg-accent-600 text-white font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-              aria-label="Get a report"
+              aria-label="Order a Pack"
             >
-              {copy.hero.primaryCTA}
+              Order a Pack
+            </Link>
+            <Link
+              href="/sample"
+              className="inline-flex items-center px-8 py-4 rounded-lg border-2 border-accent-500 text-accent-600 hover:bg-accent-50 font-semibold text-lg transition-colors duration-200"
+              aria-label="See a Sample"
+            >
+              See a Sample
             </Link>
           </div>
         </div>

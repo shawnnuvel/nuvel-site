@@ -18,66 +18,57 @@ export default function Pricing() {
 
         {/* Two Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
-          {/* Tier 1: Focused Pack */}
+          {/* Card 1: Focused */}
           <div className="bg-white rounded-xl shadow-lg p-8 relative">
             {/* Title and Price */}
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2 whitespace-pre-wrap">
-                Focused Pack
-                <span className="block text-lg font-normal text-gray-600 mt-1">(Top-100 Verified Inventors)</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Focused: 100 Registry-Linked Inventors
               </h3>
               <p className="text-3xl font-bold text-accent-600 mb-4">
-                $6,500
+                $4,500 — 48h delivery
               </p>
             </div>
 
-            {/* Features */}
-            <div className="space-y-4 mb-6">
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-accent-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700">Top-100 registry-linked inventors for your domain (guaranteed working links)</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-accent-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700">Co-inventor clusters (size ≥ 3 when present)</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-accent-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700">Deliverables: expert_map.csv, clusters_top.csv, edges.csv, methods.pdf</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-accent-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700">SLA: 48 hours (business days) • Rush: 24 hours (+30%)</p>
-              </div>
+            {/* You get */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">You get</h4>
+              <ul className="space-y-2 text-gray-700">
+                <li>• 100 named inventors in your domain</li>
+                <li>• Working registry links (EP/USPTO/WIPO etc.)</li>
+                <li>• Top collaboration clusters (who actually builds together)</li>
+                <li>• 1-page summary PDF (counts by office, methods, guarantee)</li>
+              </ul>
             </div>
 
-            {/* Guarantee */}
-            <div className="mb-6 p-4 bg-accent-50 rounded-lg">
-              <p className="text-sm text-accent-800 font-medium">
-                Guarantee: 100 working registry links or we re-run with 50 additional working registry links.
-              </p>
+            {/* Guarantee & SLA */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Guarantee & SLA</h4>
+              <ul className="space-y-2 text-gray-700">
+                <li>• 100 working links or we re-run +50 at no cost</li>
+                <li>• 48h standard • 24h rush (+30%)</li>
+              </ul>
+            </div>
+
+            {/* Best for */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Best for</h4>
+              <p className="text-gray-700">• Tight scopes and fast advisory shortlists</p>
             </div>
 
             {/* CTA */}
             <div className="mb-4">
               <Link
-                href="mailto:hello@nuvel.ai?subject=Focused Pack Request — Patent Expert Maps&body=Company name:%0ATechnical domain:%0ATimeline:"
+                href="#contact"
                 className="w-full inline-flex items-center justify-center px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors"
-                aria-label="Get a report — Focused Pack"
+                aria-label="Get this pack — Focused"
               >
-                Get a report
+                Get this pack
               </Link>
-            </div>
-
-            {/* Footer note */}
-            <div className="border-t pt-4">
-              <p className="text-xs text-gray-500">
-                Launch pricing. Increases to $7,500 after the first 10 customers.
-              </p>
             </div>
           </div>
 
-          {/* Tier 2: Extended Pack */}
+          {/* Card 2: Extended */}
           <div className="bg-white rounded-xl shadow-lg p-8 relative ring-2 ring-accent-500">
             {/* Recommended badge */}
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -88,93 +79,57 @@ export default function Pricing() {
 
             {/* Title and Price */}
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2 whitespace-pre-wrap">
-                Extended Pack
-                <span className="block text-lg font-normal text-gray-600 mt-1">(Top-200 Verified Inventors)</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Extended: 200 Registry-Linked Inventors
               </h3>
               <p className="text-3xl font-bold text-accent-600 mb-4">
-                $9,500
+                $8,500 — 48h delivery
               </p>
             </div>
 
-            {/* Features */}
-            <div className="space-y-4 mb-6">
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-accent-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700">Wider scan for larger domains (up to ~1,500 relevant patents searched)</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-accent-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700">Top-200 registry-linked inventors + larger cluster set</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-accent-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700">Deliverables: expert_map.csv, clusters_top.csv, edges.csv, methods.pdf</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-2 h-2 bg-accent-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                <p className="text-gray-700">SLA: 48 hours (business days) • Rush: 24 hours (+30%)</p>
-              </div>
+            {/* You get everything in Focused, plus */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">You get everything in Focused, plus</h4>
+              <ul className="space-y-2 text-gray-700">
+                <li>• 200 inventors and a larger cluster set</li>
+                <li>• Wider scan across adjacent terms and suppliers</li>
+                <li>• Better coverage for broad domains</li>
+              </ul>
             </div>
 
-            {/* Guarantee */}
-            <div className="mb-6 p-4 bg-accent-50 rounded-lg">
-              <p className="text-sm text-accent-800 font-medium">
-                Guarantee: 100 working registry links or we re-run with 50 additional working registry links.
-              </p>
+            {/* Guarantee & SLA */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Guarantee & SLA</h4>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Same guarantee • Same SLA</li>
+              </ul>
+            </div>
+
+            {/* Best for */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Best for</h4>
+              <p className="text-gray-700">• Strategy sprints and market maps</p>
             </div>
 
             {/* CTA */}
             <div className="mb-4">
               <Link
-                href="mailto:hello@nuvel.ai?subject=Extended Pack Request — Patent Expert Maps&body=Company name:%0ATechnical domain:%0ATimeline:"
+                href="#contact"
                 className="w-full inline-flex items-center justify-center px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors"
-                aria-label="Get a report — Extended Pack"
+                aria-label="Get this pack — Extended"
               >
-                Get a report
+                Get this pack
               </Link>
             </div>
-
-            {/* Footer note */}
-            <div className="border-t pt-4">
-              <p className="text-xs text-gray-500">
-                Launch pricing. Increases to $12,500 after the first 10 customers.
-              </p>
-            </div>
           </div>
         </div>
 
-        {/* Verification Clarification */}
-        <div className="max-w-4xl mx-auto mb-8">
-          <div className="bg-gray-100 rounded-lg p-6">
-            <h3 className="text-sm font-semibold text-gray-700 mb-2">What exactly is verified?</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              "Verified link" means the inventor appears on a patent page from an official register (USPTO/EPO/EPO Register) or WIPO/Espacenet at the time of delivery. Your CSV often includes more than 100/200 inventors; the tier count is a minimum of verified links. Any additional rows without live links are clearly flagged and included on a best-effort basis.
-            </p>
-          </div>
-        </div>
-
-        {/* Add-ons */}
-        <div className="max-w-4xl mx-auto mb-8">
-          <div className="bg-white rounded-lg shadow-sm border p-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Add-ons</h3>
-            <div className="grid md:grid-cols-3 gap-4">
-              <div className="text-center p-4 border border-gray-200 rounded-lg">
-                <h4 className="font-medium text-gray-900 mb-2">Rush 24-hour delivery</h4>
-                <p className="text-accent-600 font-semibold">+30%</p>
-              </div>
-              <div className="text-center p-4 border border-gray-200 rounded-lg">
-                <h4 className="font-medium text-gray-900 mb-2">Co-employment overlay</h4>
-                <p className="text-sm text-gray-600 mb-1">Optional network layer on top of co-inventors</p>
-                <p className="text-accent-600 font-semibold">+$2,000</p>
-              </div>
-              <div className="text-center p-4 border border-gray-200 rounded-lg">
-                <h4 className="font-medium text-gray-900 mb-2">Slide-ready IC summary</h4>
-                <p className="text-sm text-gray-600 mb-1">2 pages</p>
-                <p className="text-accent-600 font-semibold">+$1,000</p>
-              </div>
-            </div>
-          </div>
+        {/* Footnote */}
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm text-gray-500">
+            Designed for research/strategy (R&D/CI). Not a legal product.<br />
+            Data cut-off: 2024-12-31. Office coverage varies; KR typically lower.
+          </p>
         </div>
       </div>
     </section>
