@@ -12,7 +12,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Niche Team Detection | Nuvel',
+  title: 'Expert Inventor Maps | Nuvel',
   description: 'One-off spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
   keywords: ['spinout detection', 'corporate venture', 'corp dev', 'team analysis', 'founder pods'],
   authors: [{ name: 'Nuvel' }],
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    title: 'Niche Team Detection | Nuvel',
+    title: 'Expert Inventor Maps | Nuvel',
     description: 'One-off spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
     siteName: 'Spinout Origins Baseline',
     images: [
