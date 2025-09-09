@@ -70,6 +70,28 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
+        {/* Organization + Logo JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Nuvel",
+              "url": "https://nuvel.ai",
+              "logo": "https://nuvel.ai/icon.svg",
+              "sameAs": [
+                "https://www.linkedin.com/company/nuvel-ai"
+              ],
+              "contactPoint": [{
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "email": "hello@nuvel.ai"
+              }]
+            })
+          }}
+        />
+        
         {/* Plausible Analytics */}
         {plausibleDomain && (
           <script

@@ -42,6 +42,9 @@ export function Footer() {
             <p className="text-xs text-primary-500 leading-relaxed max-w-4xl">
               Based on historical public web sources. Supporting evidence only. Client owns decisions. Data cut-off: 2024-12-31.
             </p>
+            <p className="text-xs text-primary-400 mt-2">
+              Data cutoff: 2024-12-31 • Verified via public patent registries
+            </p>
           </div>
 
           {/* Copyright */}

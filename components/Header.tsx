@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import { Logo } from './Logo'
 import { Container } from './Container'
@@ -10,6 +10,17 @@ import { copy } from '@/content/copy'
 export function Header() {
   const router = useRouter()
   const pathname = usePathname()
+  const [isScrolled, setIsScrolled] = useState(false)
+  
+  // Handle scroll for sticky CTA
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100)
+    }
+    
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
   
   // Handle hash navigation when page loads
   useEffect(() => {
@@ -55,58 +66,73 @@ export function Header() {
   }
 
   return (
-    <header className="bg-white border-b border-primary-200 sticky top-0 z-40 backdrop-blur-sm bg-white/95">
-      <Container>
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Logo />
+    <>
+      <header className="bg-white border-b border-primary-200 sticky top-0 z-40 backdrop-blur-sm bg-white/95">
+        <Container>
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <Logo />
 
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection('how-it-works')}
-              className="btn-ghost text-sm"
-            >
-              How it works
-            </button>
-            <button
-              onClick={() => scrollToSection('whats-inside')}
-              className="btn-ghost text-sm"
-            >
-              What's inside
-            </button>
-            <button
-              onClick={() => scrollToSection('pricing')}
-              className="btn-ghost text-sm"
-            >
-              Pricing
-            </button>
-            <button
-              onClick={() => scrollToSection('faq')}
-              className="btn-ghost text-sm"
-            >
-              FAQ
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="btn-ghost text-sm"
-            >
-              Contact
-            </button>
-          </nav>
+            {/* Navigation */}
+            <nav className="hidden md:flex items-center space-x-8">
+              <button
+                onClick={() => scrollToSection('steps')}
+                className="btn-ghost text-sm"
+              >
+                How it works
+              </button>
+              <button
+                onClick={() => scrollToSection('benefits')}
+                className="btn-ghost text-sm"
+              >
+                What you get
+              </button>
+              <button
+                onClick={() => scrollToSection('pricing')}
+                className="btn-ghost text-sm"
+              >
+                Pricing
+              </button>
+              <button
+                onClick={() => scrollToSection('faq')}
+                className="btn-ghost text-sm"
+              >
+                FAQ
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="btn-ghost text-sm"
+              >
+                Contact
+              </button>
+            </nav>
 
-          {/* CTA */}
-          <div className="flex items-center space-x-4">
-            <a
-              href="/#contact?plan=pods"
-              className="btn-primary text-sm hidden sm:inline-flex"
-              aria-label="Get a report — Pods Report"
-            >
-              Get a report
-            </a>
+            {/* CTA */}
+            <div className="flex items-center space-x-4">
+              <a
+                href="mailto:hello@nuvel.ai?subject=Request sample pack — Patent Expert Maps&body=Company name:%0ATechnical domain:%0ATimeline:"
+                className="btn-primary text-sm hidden sm:inline-flex"
+                aria-label="Get a report"
+              >
+                Get a report
+              </a>
+            </div>
           </div>
+        </Container>
+      </header>
+
+      {/* Sticky CTA */}
+      {isScrolled && (
+        <div className="fixed top-4 right-4 z-50">
+          <a
+            href="mailto:hello@nuvel.ai?subject=Request sample pack — Patent Expert Maps&body=Company name:%0ATechnical domain:%0ATimeline:"
+            className="inline-flex items-center px-4 py-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold text-sm rounded-lg shadow-lg transition-colors"
+            aria-label="Get a report"
+          >
+            Get a report
+          </a>
         </div>
-      </Container>
-    </header>
+      )}
+    </>
   )
 }

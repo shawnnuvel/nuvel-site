@@ -68,6 +68,16 @@ export function Benefits() {
             </div>
           ))}
         </div>
+
+        {/* Secondary CTA */}
+        <div className="text-center">
+          <a
+            href="mailto:hello@nuvel.ai?subject=Request redacted sample — Patent Expert Maps&body=Company name:%0ATechnical domain:%0ATimeline:"
+            className="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium text-lg transition-colors"
+          >
+            See a redacted sample →
+          </a>
+        </div>
       </Container>
     </section>
   )
