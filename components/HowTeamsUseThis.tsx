@@ -22,7 +22,8 @@ export default function HowTeamsUseThis() {
             <div className="mb-4">
               <p className="text-slate-600 font-medium mb-2">Outcome:</p>
               <p className="text-slate-700">
-                A defensible longlist + clusters so you can book the right 5–8 calls and make a build/buy/partner call — this week.
+                A defensible longlist + clusters so you can source the right experts
+                and make a build/buy/partner decision — this week.
               </p>
             </div>
 
@@ -30,8 +31,8 @@ export default function HowTeamsUseThis() {
               <p className="text-slate-600 font-medium mb-2">How it works:</p>
               <ol className="list-decimal list-inside space-y-1 text-slate-700 text-sm">
                 <li>Send 5–15 domain terms (e.g., "gate-all-around process").</li>
-                <li>Get 100/200 registry-linked inventors + 1-page summary.</li>
-                <li>Sort by centrality/recency/organization and start outreach.</li>
+                <li>Get 100/200 guaranteed working links + clusters + methods.pdf.</li>
+                <li>Sort by centrality/recency/org and start outreach.</li>
               </ol>
             </div>
 
@@ -49,7 +50,7 @@ export default function HowTeamsUseThis() {
             <div className="mb-4">
               <p className="text-slate-600 font-medium mb-2">Outcome:</p>
               <p className="text-slate-700">
-                Fast evidence for "is this real or slideware?"
+                Fast, registry-backed evidence for "is this real or slideware?"
               </p>
             </div>
 
