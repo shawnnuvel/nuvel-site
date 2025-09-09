@@ -32,9 +32,9 @@ export function Hero() {
           {/* CTA */}
           <div className="flex justify-center">
             <Link
-              href="/#contact?plan=pods"
+              href="mailto:hello@nuvel.ai?subject=Request sample pack — Patent Expert Maps&body=Company name:%0ATechnical domain:%0ATimeline:"
               className="inline-flex items-center px-8 py-4 rounded-lg bg-accent-500 hover:bg-accent-600 text-white font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-              aria-label="Get a report — Pods Report"
+              aria-label="Get a report"
             >
               {copy.hero.primaryCTA}
             </Link>

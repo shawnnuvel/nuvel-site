@@ -1,96 +1,93 @@
 export const copy = {
   hero: {
-    title: 'Identify Specialized Teams for Deal-Sourcing',
-    subtitle: 'Data insights built via mapping close to a billion employment stint records to surface teams with proven collaboration',
+    title: 'Stop paging through patents. Start gathering experts.',
+    subtitle: 'Nuvel graphs millions of raw data points into a verified, expert map you can act on immediately.',
     outcomeRow: '',
     primaryCTA: 'Get a report',
     secondaryCTA: '',
-    trustLine: 'Trusted by top Corporate Venture and Corporate Development Teams'
+    trustLine: ''
   },
 
   steps: {
     title: 'How it works',
-    subtitle: 'Three simple steps',
+    subtitle: 'Four simple steps',
     items: [
       {
         number: '1',
-        title: 'Set your scope',
-        description: 'Choose your vertical (e.g., AI infra, robotics), anchor employer(s), region(s), and roles.'
+        title: 'You provide seed patents or a domain description',
+        description: 'Share your technical domain or specific patents to analyze.'
       },
       {
         number: '2',
-        title: 'We detect proven teams',
-        description: 'Nuvel runs proprietary graph algorithms across close to 1 billion employment-stint records to surface thematic clusters of professionals with co-work experience and patent/role evidence (if available).'
+        title: 'We build the expert map',
+        description: 'We map inventors, co-inventor networks, and employment context.'
       },
       {
         number: '3',
-        title: 'You get the exhibit',
-        description: 'Board-ready report + pod cards in 48h (24h rush). Each pod shows dates, confidence, and a data freshness band.'
+        title: 'We verify public registry links',
+        description: 'We verify links (EPO → WIPO → USPTO), flagging anything that doesn\'t resolve.'
+      },
+      {
+        number: '4',
+        title: 'You receive a pack within 48 hours',
+        description: 'Get your research pack with verified data and registry links (24h rush available).'
       }
     ]
   },
 
   benefits: {
-    title: 'What\'s inside',
-    subtitle: '',
+    title: 'What you get',
+    subtitle: 'Deliverables (Research Pack)',
     items: [
       {
-        title: 'Verified pods (2–5)',
-        description: 'With ≥90-day overlap, team-density score, layoff-filter status.'
+        title: 'Inventors in your domain',
+        description: 'With patent IDs, titles, years'
       },
       {
-        title: 'Names + identity anchors',
-        description: 'Full name, public identifier, city/country'
+        title: 'Co-inventor networks',
+        description: 'Who published with whom'
       },
       {
-        title: 'PDF + CSV',
-        description: 'Clear "How to read this" page, 24–48h turnaround.'
+        title: 'Relationships',
+        description: 'Co-invention edges; optional co-employment edges where available'
+      },
+      {
+        title: 'Methods and coverage metrics',
+        description: 'Data sources, limitations, and registry link rates'
+      },
+      {
+        title: 'Optional: 1-page PDF summary',
+        description: 'Executive summary for stakeholders'
       }
     ]
   },
 
-  method: {
-    title: 'Method',
-    items: [
-      'Real co-work: ≥90 days together at the same employer; pod size 2–5; dense ties (≥1 triangle).',
-      'Craft evidence: co-inventor/patent class links or strong role/topic coherence.',
-      'Layoff guard: we down-rank or exclude pods inside large layoff spikes.'
-    ]
-  },
-
   pricing: {
-    title: 'On-demand reports. No subscriptions. 24–48h delivery.',
-    subtitle: '',
-    guarantee: 'If your agreed scope yields fewer than the guaranteed number of HIGH-confidence pods, you choose: a full refund or a no-cost re-run with adjusted scope. (HIGH-confidence = 2–5 people, same employer, ≥90 days overlap, density ≥50%, passes layoff-timing filter; contractors/interns excluded. Role/patent evidence included when available.)',
-    compliance: 'Based on historical public web sources. Supporting evidence only. Client owns decisions. Data cut-off: 2024-12-31.'
+    title: 'Research Pack — from $7,500',
+    subtitle: 'Includes expert_map.csv, clusters_top.csv, edges.csv, readme.pdf, and Top-N registry-linked guarantee. 48-hour standard delivery.',
+    guarantee: 'We guarantee a minimum number of registry-linked entries per pack (e.g., Top-100 linked) and clearly flag unlinked ones.',
+    compliance: 'Employment data cutoff: Dec 31, 2024. We do not provide legal advice.',
+    enterpriseNote: 'Need court-ready sourcing? Contact us for Enterprise.'
   },
 
   faq: {
     title: 'FAQ',
     items: [
       {
+        question: 'Is this legally admissible?',
+        answer: 'We provide factual data and public registry links. This is a research product, not legal advice. For litigation workflows, contact us about our Enterprise offering.'
+      },
+      {
         question: 'How fresh is the data?',
-        answer: 'We analyze historical records through Data cut-off: **2024-12-31** for repeatability. Some profiles are fresher, some older. We focus on evidence of past collaboration (team chemistry), not real-time tracking.'
+        answer: 'Patent registries are public and stable. Employment context is historical up to Dec 31, 2024, and flagged as such.'
       },
       {
-        question: 'What is a "high-confidence team"?',
-        answer: '2–5 people who worked together 90+ days, with over half of teammate pairs overlapping in the same org/time window, day-precise dates, and no mass-layoff timing.'
+        question: 'What happens when a link doesn\'t resolve?',
+        answer: 'We include the patent identifier and mark the record as "unlinked." The pack\'s summary reports the exact coverage.'
       },
       {
-        question: 'What does "team density" mean?',
-        answer: 'Of all possible teammate pairs in a pod, the share that overlapped together in the same org/window. Higher density = tighter, real team.'
-      },
-      {
-        question: 'Are you a background check?',
-        answer: 'No—this is historical team analysis for investment/strategy, not a consumer report.'
-      },
-      {
-        question: 'Can you include profile links?',
-        answer: 'By default we use identity anchors. With NDA/consent, we can include public profile links.'
-      },
-      {
-        question: 'What if you find fewer pods than promised?',
-        answer: 'You choose a full refund or a free one-time re-run with widened scope.'
+        question: 'Can you include co-employment?',
+        answer: 'Yes — where available, we add co-employment edges. You\'ll see these as a separate edge type in edges.csv.'
       }
     ]
   },
@@ -105,8 +102,30 @@ export const copy = {
     }
   },
 
-  compliance: {
-    text: 'Based on historical public web sources. Supporting evidence only. Client owns decisions.'
+  // Patent Expert Maps specific content
+  whyUseful: {
+    title: 'Why this is useful',
+    columns: [
+      {
+        title: 'R&D & Strategy',
+        description: 'See who\'s building what, where. Map collaboration networks behind critical tech areas. Identify potential partners, advisors, and acquisition targets.'
+      },
+      {
+        title: 'Competitive Intel',
+        description: 'Understand competitor portfolios by people, not just counts. Find influential inventors at the edges of your domain.'
+      }
+    ],
+    note: 'We provide factual, people-centric patent evidence — no predictions, no recommendations.'
+  },
+
+  quality: {
+    title: 'Quality & Coverage',
+    description: 'We run a registry-link check on a stratified sample of the output and report coverage in every pack. Our latest audit shows ~80–85% overall registry linkage, with EU/US ~95%+, JP ~85%, KR ~55–60%. We guarantee a minimum number of registry-linked entries (e.g., Top-100) and clearly flag unlinked ones.',
+    note: 'Employment data cutoff: Dec 31, 2024. We do not provide legal advice.'
+  },
+
+  legalDisclaimer: {
+    text: 'Nuvel provides factual data compilations and public registry references. No recommendations or legal advice are provided.'
   },
 
   guarantee: {
@@ -165,25 +184,25 @@ Exclusions: scopes changed after intake, outside intake limits, or unrelated req
   // Email templates
   emails: {
     sampleRequest: {
-      subject: 'Sample request — Spinout Origins Baseline',
+      subject: 'Request sample pack — Patent Expert Maps',
       body: `Company name:
-Theme(s):
+Technical domain:
 Timeline:`
     },
     
     headerSampleRequest: {
-      subject: 'Sample request — Spinout Origins Baseline',
+      subject: 'Request sample pack — Patent Expert Maps',
       body: `Company name:
-Theme(s):
+Technical domain:
 Timeline:`
     },
     
     contactForm: {
-      subject: 'Contact request — Spinout Origins Baseline',
+      subject: 'Contact request — Patent Expert Maps',
       body: `Name: 
 Email: 
 Company: 
-Theme: `
+Technical domain: `
     }
   }
 } as const

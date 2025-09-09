@@ -68,27 +68,6 @@ export function Benefits() {
             </div>
           ))}
         </div>
-
-        {/* Method section */}
-        <div className="bg-white rounded-2xl p-8 shadow-lg border border-primary-100">
-          <h3 className="text-2xl font-semibold text-primary-900 mb-6 text-center">
-            {copy.method.title}
-          </h3>
-          <div className="space-y-4 max-w-4xl mx-auto">
-            {copy.method.items.map((item: any, index: number) => (
-              <div key={index} className="flex items-start">
-                <div className="inline-flex items-center justify-center w-6 h-6 bg-accent-100 text-accent-600 rounded-full mr-4 mt-0.5 flex-shrink-0">
-                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="text-primary-700 leading-relaxed">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
       </Container>
     </section>
   )
