@@ -76,13 +76,13 @@ export function Header() {
             {/* Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               <button
-                onClick={() => scrollToSection('steps')}
+                onClick={() => scrollToSection('how-it-works')}
                 className="btn-ghost text-sm"
               >
                 How it works
               </button>
               <button
-                onClick={() => scrollToSection('benefits')}
+                onClick={() => scrollToSection('whats-inside')}
                 className="btn-ghost text-sm"
               >
                 What you get
@@ -92,6 +92,12 @@ export function Header() {
                 className="btn-ghost text-sm"
               >
                 Pricing
+              </button>
+              <button
+                onClick={() => scrollToSection('how-teams-use-this')}
+                className="btn-ghost text-sm"
+              >
+                How teams use this
               </button>
               <button
                 onClick={() => scrollToSection('faq')}

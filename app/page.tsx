@@ -2,6 +2,7 @@ import { Hero } from '@/components/Hero'
 import { Steps } from '@/components/Steps'
 import { Benefits } from '@/components/Benefits'
 import Pricing from '@/components/Pricing'
+import HowTeamsUseThis from '@/components/HowTeamsUseThis'
 import { FAQ } from '@/components/FAQ'
 import { ContactForm } from '@/components/ContactForm'
 
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Steps />
       <Benefits />
       <Pricing />
+      <HowTeamsUseThis />
       <FAQ />
       <ContactForm />
     </>
