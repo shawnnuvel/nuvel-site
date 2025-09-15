@@ -5,10 +5,10 @@ import { copy } from '@/content/copy'
 import { createMailtoLink } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Sample Report - Spinout Origins Baseline',
+  title: 'Sample Dossier - TrueInventor Dossier',
   description: 'This is a watermarked example. Request the full redacted PDF at hello@nuvel.ai.',
   openGraph: {
-    title: 'Sample Report - Spinout Origins Baseline',
+    title: 'Sample Dossier - TrueInventor Dossier',
     description: 'This is a watermarked example. Request the full redacted PDF at hello@nuvel.ai.',
   },
 }
@@ -64,11 +64,11 @@ export default function SamplePage() {
                 
                 <div className="space-y-4 mb-8">
                   {[
-                    'Executive Summary with top pods ranked',
-                    'Pod Cards with overlaps and craft evidence',
-                    'CSV export with confidence scores',
-                    'Methodology and data sources',
-                    'Compliance attestations'
+                    'Summary sheet: Overview and key metrics',
+                    'Inventors sheet: Disambiguated inventor profiles',
+                    'Patents sheet: Patent details with registry links',
+                    'Assignees sheet: Harmonized company information',
+                    '2-page PDF brief: Executive summary and methodology'
                   ].map((item, index) => (
                     <div key={index} className="flex items-center">
                       <div className="w-2 h-2 bg-success-500 rounded-full mr-4"></div>
@@ -87,7 +87,7 @@ export default function SamplePage() {
                     )}
                     className="btn-primary text-lg py-4 px-8"
                   >
-                    Get a sample report
+                    Get a sample dossier
                   </a>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function SamplePage() {
               Ready to get started?
             </h2>
             <p className="text-xl text-primary-600 mb-10">
-              Request your Spinout Origins Baseline report today
+              Request your TrueInventor Dossier today
             </p>
 
             <a 
@@ -115,7 +115,7 @@ export default function SamplePage() {
               )}
               className="btn-primary text-lg py-4 px-8"
             >
-              Get a sample report
+              Get a sample dossier
             </a>
           </div>
         </Container>

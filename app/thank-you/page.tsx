@@ -9,7 +9,7 @@ export default function ThankYou() {
           <ul className="list-disc pl-5 space-y-2 text-primary-700">
             <li>We confirm your scope and target vertical.</li>
             <li>We share a short intake for anchors/regions/roles.</li>
-            <li>Delivery window: 24–48 hours after scope lock.</li>
+            <li>Delivery window: 24 hours after scope lock.</li>
           </ul>
         </div>
         <div className="mt-6 p-4 bg-accent-50 rounded border border-accent-200 text-accent-700">

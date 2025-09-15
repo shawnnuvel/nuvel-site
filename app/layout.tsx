@@ -12,9 +12,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Expert Inventor Maps | Nuvel',
-  description: 'One-off spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
-  keywords: ['spinout detection', 'corporate venture', 'corp dev', 'team analysis', 'founder pods'],
+  title: 'TrueInventor Dossier | Nuvel',
+  description: 'Stop cleaning patent exports. Get a decision-ready inventor dossier in 24 hours. Verified, disambiguated people–patent–company dossier you can trust.',
+  keywords: ['patent analysis', 'inventor dossier', 'patent export', 'registry links', 'disambiguation'],
   authors: [{ name: 'Nuvel' }],
   creator: 'Nuvel',
   publisher: 'Nuvel',
@@ -31,15 +31,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    title: 'Expert Inventor Maps | Nuvel',
-    description: 'One-off spinout reports that surface small teams who actually worked together. For Corporate Venture and Corp Dev. 48-hour delivery.',
-    siteName: 'Spinout Origins Baseline',
+    title: 'TrueInventor Dossier | Nuvel',
+    description: 'Stop cleaning patent exports. Get a decision-ready inventor dossier in 24 hours. Verified, disambiguated people–patent–company dossier you can trust.',
+    siteName: 'TrueInventor Dossier',
     images: [
       {
         url: '/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'Spinout Origins Baseline',
+        alt: 'TrueInventor Dossier',
       },
     ],
   },

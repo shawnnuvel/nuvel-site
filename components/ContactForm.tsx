@@ -145,8 +145,8 @@ Additional Notes: ${formData.notes}`
                 className="w-full px-4 py-3 border border-primary-200 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors"
               >
                 <option value="">Select timeline</option>
-                <option value="standard">Standard (48 hours)</option>
-                <option value="rush">Rush (24 hours) - Additional fee</option>
+                <option value="standard">Standard (24 hours)</option>
+                <option value="rush">Rush (12 hours, +30%)</option>
                 <option value="flexible">Flexible</option>
               </select>
             </div>

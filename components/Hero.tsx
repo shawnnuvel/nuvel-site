@@ -32,18 +32,18 @@ export function Hero() {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="#contact"
-              className="inline-flex items-center px-8 py-4 rounded-lg bg-accent-500 hover:bg-accent-600 text-white font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-              aria-label="Order a Pack"
-            >
-              Order a Pack
-            </Link>
-            <Link
               href="/sample"
               className="inline-flex items-center px-8 py-4 rounded-lg border-2 border-accent-500 text-accent-600 hover:bg-accent-50 font-semibold text-lg transition-colors duration-200"
-              aria-label="See a Sample"
+              aria-label="See Sample"
             >
-              See a Sample
+              {copy.hero.primaryCTA}
+            </Link>
+            <Link
+              href="#contact"
+              className="inline-flex items-center px-8 py-4 rounded-lg bg-accent-500 hover:bg-accent-600 text-white font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+              aria-label="Order a Dossier"
+            >
+              {copy.hero.secondaryCTA}
             </Link>
           </div>
         </div>

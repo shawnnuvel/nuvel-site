@@ -1,95 +1,48 @@
+import { hero, howItWorks, whatsInside, pricing, faq, footer } from './trueinventor'
+
 export const copy = {
   hero: {
-    title: 'Stop paging through patents. Start gathering experts.',
-    subtitle: 'Nuvel graphs millions of raw data points into a verified, expert map you can act on immediately.',
+    title: hero.title,
+    subtitle: hero.subtitle,
     outcomeRow: '',
-    primaryCTA: 'Get a report',
-    secondaryCTA: '',
+    primaryCTA: hero.primaryCta,
+    secondaryCTA: hero.secondaryCta,
     trustLine: ''
   },
 
   steps: {
     title: 'How it works',
     subtitle: 'Four simple steps',
-    items: [
-      {
-        number: '1',
-        title: 'You provide seed patents or a domain description',
-        description: 'Share your technical domain or specific patents to analyze.'
-      },
-      {
-        number: '2',
-        title: 'We build the expert map',
-        description: 'We map inventors, co-inventor networks, and employment context.'
-      },
-      {
-        number: '3',
-        title: 'We verify public registry links',
-        description: 'We verify links (EPO → WIPO → USPTO), flagging anything that doesn\'t resolve.'
-      },
-      {
-        number: '4',
-        title: 'You receive a pack within 48 hours',
-        description: 'Get your research pack with verified data and registry links (24h rush available).'
-      }
-    ]
+    items: howItWorks.steps.map((step, index) => ({
+      number: (index + 1).toString(),
+      title: step.title,
+      description: step.body
+    }))
   },
 
   benefits: {
-    title: 'What you get',
-    subtitle: 'Deliverables (Research Pack)',
-    items: [
-      {
-        title: 'Inventors in your domain',
-        description: 'With patent IDs, titles, years'
-      },
-      {
-        title: 'Co-inventor networks',
-        description: 'Who published with whom'
-      },
-      {
-        title: 'Relationships',
-        description: 'Co-invention edges; optional co-employment edges where available'
-      },
-      {
-        title: 'Methods and coverage metrics',
-        description: 'Data sources, limitations, and registry link rates'
-      },
-      {
-        title: 'Optional: 1-page PDF summary',
-        description: 'Executive summary for stakeholders'
-      }
-    ]
+    title: whatsInside.title,
+    subtitle: 'Deliverables (TrueInventor Dossier)',
+    items: whatsInside.bullets.map((bullet, index) => ({
+      title: bullet.split(':')[0] || `Feature ${index + 1}`,
+      description: bullet.split(':').slice(1).join(':').trim() || bullet
+    }))
   },
 
   pricing: {
-    title: 'Research Pack — from $7,500',
-    subtitle: 'Includes expert_map.csv, clusters_top.csv, edges.csv, readme.pdf, and Top-N registry-linked guarantee. 48-hour standard delivery.',
-    guarantee: 'We guarantee a minimum number of registry-linked entries per pack (e.g., Top-100 linked) and clearly flag unlinked ones.',
-    compliance: 'Employment data cutoff: Dec 31, 2024. We do not provide legal advice.',
-    enterpriseNote: 'Need court-ready sourcing? Contact us for Enterprise.'
+    title: 'TrueInventor Dossier Pricing',
+    subtitle: 'Pilot pricing for the first 10 customers',
+    guarantee: pricing.guarantee.join(' '),
+    compliance: whatsInside.note,
+    enterpriseNote: pricing.footnote
   },
 
   faq: {
     title: 'FAQ',
-    items: [
-      {
-        question: 'Is this legally admissible?',
-        answer: 'We provide factual data and public registry links. This is a research product, not legal advice. For litigation workflows, contact us about our Enterprise offering.'
-      },
-      {
-        question: 'How fresh is the data?',
-        answer: 'Patent registries are public and stable. Employment context is historical up to Dec 31, 2024, and flagged as such.'
-      },
-      {
-        question: 'What happens when a link doesn\'t resolve?',
-        answer: 'We include the patent identifier and mark the record as "unlinked." The pack\'s summary reports the exact coverage.'
-      },
-      {
-        question: 'Can you include co-employment?',
-        answer: 'Yes — where available, we add co-employment edges. You\'ll see these as a separate edge type in edges.csv.'
-      }
-    ]
+    items: faq.map(item => ({
+      question: item.q,
+      answer: item.a
+    }))
   },
 
   contact: {
@@ -102,7 +55,7 @@ export const copy = {
     }
   },
 
-  // Patent Expert Maps specific content
+  // Legacy content kept for compatibility
   whyUseful: {
     title: 'Why this is useful',
     columns: [
@@ -125,7 +78,7 @@ export const copy = {
   },
 
   legalDisclaimer: {
-    text: 'Nuvel provides factual data compilations and public registry references. No recommendations or legal advice are provided.'
+    text: footer.disclaimer
   },
 
   guarantee: {
@@ -174,31 +127,31 @@ Exclusions: scopes changed after intake, outside intake limits, or unrelated req
     },
     
     sample: {
-      title: 'Sample Report',
+      title: 'Sample Dossier',
       subtitle: 'This is a watermarked example',
       description: 'Request the full redacted PDF at hello@nuvel.ai.',
-      note: 'Get a sample report button (mailto: link above).'
+      note: 'Get a sample dossier button (mailto: link above).'
     }
   },
 
   // Email templates
   emails: {
     sampleRequest: {
-      subject: 'Request sample pack — Patent Expert Maps',
+      subject: 'Request sample dossier — TrueInventor Dossier',
       body: `Company name:
 Technical domain:
 Timeline:`
     },
     
     headerSampleRequest: {
-      subject: 'Request sample pack — Patent Expert Maps',
+      subject: 'Request sample dossier — TrueInventor Dossier',
       body: `Company name:
 Technical domain:
 Timeline:`
     },
     
     contactForm: {
-      subject: 'Contact request — Patent Expert Maps',
+      subject: 'Contact request — TrueInventor Dossier',
       body: `Name: 
 Email: 
 Company: 
