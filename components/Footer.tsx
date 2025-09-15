@@ -40,10 +40,10 @@ export function Footer() {
           {/* Compliance disclaimer */}
           <div className="mt-12 pt-8 border-t border-primary-200">
             <p className="text-xs text-primary-500 leading-relaxed max-w-4xl">
-              Based on historical public web sources. Supporting evidence only. Client owns decisions. Data cut-off: 2024-12-31.
+              Patents publish ~18 months after filing; we provide a forensic snapshot of the public record.
             </p>
-            <p className="text-xs text-primary-400 mt-2">
-              Data cutoff: 2024-12-31 • Verified via public patent registries
+            <p className="text-xs text-primary-500 leading-relaxed max-w-4xl mt-2">
+              Based on historical public web sources. Supporting evidence only. Client owns decisions. Data cut-off: 2024-12-31.
             </p>
           </div>
 

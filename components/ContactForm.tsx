@@ -19,11 +19,11 @@ export function ContactForm() {
     e.preventDefault()
     
     // Create mailto link with form data
-    const subject = 'Patent Expert Maps Request'
+    const subject = 'TrueInventor™ Dossier Request'
     const body = `Name: ${formData.name}
 Email: ${formData.email}
 Company: ${formData.company}
-Technical Domain: ${formData.technicalDomain}
+Technical Domain or Target Company: ${formData.technicalDomain}
 Seed Patents: ${formData.seedPatents}
 Timeline: ${formData.timeline}
 Additional Notes: ${formData.notes}`
@@ -46,10 +46,10 @@ Additional Notes: ${formData.notes}`
           {/* Section header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-4">
-              Get Your Patent Expert Map
+              {copy.contact.title}
             </h2>
             <p className="text-lg text-primary-600">
-              Request a Research Pack for your technical domain
+              {copy.contact.subtitle}
             </p>
           </div>
 
@@ -104,7 +104,7 @@ Additional Notes: ${formData.notes}`
 
             <div>
               <label htmlFor="technicalDomain" className="block text-sm font-medium text-primary-900 mb-2">
-                Technical Domain *
+                Technical Domain or Target Company *
               </label>
               <input
                 type="text"
@@ -170,7 +170,7 @@ Additional Notes: ${formData.notes}`
               type="submit"
               className="w-full btn-primary text-lg py-4"
             >
-              Request Research Pack
+              Request TrueInventor™ Dossier
             </button>
           </form>
 

@@ -1,9 +1,10 @@
 import { Hero } from '@/components/Hero'
-import { Steps } from '@/components/Steps'
-import { Benefits } from '@/components/Benefits'
+import { SocialProof } from '@/components/SocialProof'
+import { ProblemSolution } from '@/components/ProblemSolution'
+import { Deliverables } from '@/components/Deliverables'
+import { HowTeamsUse } from '@/components/HowTeamsUse'
+import { RiskReversal } from '@/components/RiskReversal'
 import Pricing from '@/components/Pricing'
-import Deliverables from '@/components/Deliverables'
-import HowTeamsUseThis from '@/components/HowTeamsUseThis'
 import { FAQ } from '@/components/FAQ'
 import { ContactForm } from '@/components/ContactForm'
 
@@ -11,11 +12,12 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Steps />
-      <Benefits />
-      <Pricing />
+      <SocialProof />
+      <ProblemSolution />
       <Deliverables />
-      <HowTeamsUseThis />
+      <HowTeamsUse />
+      <RiskReversal />
+      <Pricing />
       <FAQ />
       <ContactForm />
     </>

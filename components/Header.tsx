@@ -73,45 +73,51 @@ export function Header() {
             {/* Logo */}
             <Logo />
 
-            {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <button
-                onClick={() => scrollToSection('how-it-works')}
-                className="btn-ghost text-sm"
-              >
-                How it works
-              </button>
-              <button
-                onClick={() => scrollToSection('whats-inside')}
-                className="btn-ghost text-sm"
-              >
-                What you get
-              </button>
-              <button
-                onClick={() => scrollToSection('pricing')}
-                className="btn-ghost text-sm"
-              >
-                Pricing
-              </button>
-              <button
-                onClick={() => scrollToSection('how-teams-use-this')}
-                className="btn-ghost text-sm"
-              >
-                How teams use this
-              </button>
-              <button
-                onClick={() => scrollToSection('faq')}
-                className="btn-ghost text-sm"
-              >
-                FAQ
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="btn-ghost text-sm"
-              >
-                Contact
-              </button>
-            </nav>
+                    {/* Navigation */}
+                    <nav className="hidden md:flex items-center space-x-8">
+                      <button
+                        onClick={() => scrollToSection('how-it-works')}
+                        className="btn-ghost text-sm"
+                      >
+                        How it works
+                      </button>
+                      <button
+                        onClick={() => scrollToSection('whats-inside')}
+                        className="btn-ghost text-sm"
+                      >
+                        What you get
+                      </button>
+                      <button
+                        onClick={() => scrollToSection('pricing')}
+                        className="btn-ghost text-sm"
+                      >
+                        Pricing
+                      </button>
+                      <button
+                        onClick={() => scrollToSection('how-teams-use-this')}
+                        className="btn-ghost text-sm"
+                      >
+                        How teams use this
+                      </button>
+                      <a
+                        href="/methods-qa"
+                        className="btn-ghost text-sm"
+                      >
+                        Methods & QA
+                      </a>
+                      <button
+                        onClick={() => scrollToSection('faq')}
+                        className="btn-ghost text-sm"
+                      >
+                        FAQ
+                      </button>
+                      <button
+                        onClick={() => scrollToSection('contact')}
+                        className="btn-ghost text-sm"
+                      >
+                        Contact
+                      </button>
+                    </nav>
           </div>
         </Container>
       </header>
@@ -120,11 +126,11 @@ export function Header() {
       {isScrolled && (
         <div className="fixed top-4 right-4 z-50">
           <a
-            href="mailto:hello@nuvel.ai?subject=Request sample pack — Patent Expert Maps&body=Company name:%0ATechnical domain:%0ATimeline:"
+            href="mailto:hello@nuvel.ai?subject=Request TrueInventor Sample&body=Company name:%0ATechnical domain:%0ATimeline:"
             className="inline-flex items-center px-4 py-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold text-sm rounded-lg shadow-lg transition-colors"
-            aria-label="Get a report"
+            aria-label="Get a Dossier"
           >
-            Get a report
+            Get a Dossier
           </a>
         </div>
       )}

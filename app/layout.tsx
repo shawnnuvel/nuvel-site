@@ -12,7 +12,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'TrueInventor Dossier | Nuvel',
+  title: 'TrueInventor™ Dossier | Nuvel',
   description: 'Stop cleaning patent exports. Get a decision-ready inventor dossier in 24 hours. Verified, disambiguated people–patent–company dossier you can trust.',
   keywords: ['patent analysis', 'inventor dossier', 'patent export', 'registry links', 'disambiguation'],
   authors: [{ name: 'Nuvel' }],
@@ -31,15 +31,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    title: 'TrueInventor Dossier | Nuvel',
+    title: 'TrueInventor™ Dossier | Nuvel',
     description: 'Stop cleaning patent exports. Get a decision-ready inventor dossier in 24 hours. Verified, disambiguated people–patent–company dossier you can trust.',
-    siteName: 'TrueInventor Dossier',
+    siteName: 'TrueInventor™ Dossier',
     images: [
       {
         url: '/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'TrueInventor Dossier',
+        alt: 'TrueInventor™ Dossier',
       },
     ],
   },

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { Container } from './Container'
+import { FAQSchema } from './FAQSchema'
 import { copy } from '@/content/copy'
 
 export function FAQ() {
@@ -17,6 +18,7 @@ export function FAQ() {
 
   return (
     <section id="faq" className="section-padding bg-primary-50">
+      <FAQSchema faqs={copy.faq.items.map(item => ({ q: item.question, a: item.answer }))} />
       <Container>
         {/* Section header */}
         <div className="text-center mb-16">

@@ -1,4 +1,19 @@
-import { hero, howItWorks, whatsInside, pricing, faq, footer } from './trueinventor'
+import { 
+  hero, 
+  howItWorks, 
+  whatsInside, 
+  pricing, 
+  faq, 
+  footer,
+  problemSolution,
+  howTeamsUse,
+  deliverables,
+  whyNuvel,
+  updatedPricing,
+  updatedFaq,
+  methodsQA,
+  socialProof
+} from './trueinventor'
 
 export const copy = {
   hero: {
@@ -9,6 +24,19 @@ export const copy = {
     secondaryCTA: hero.secondaryCta,
     trustLine: ''
   },
+
+  socialProof: socialProof,
+
+  problemSolution: {
+    problem: problemSolution.problem,
+    solution: problemSolution.solution
+  },
+
+  howTeamsUse: howTeamsUse,
+
+  deliverables: deliverables,
+
+  whyNuvel: whyNuvel,
 
   steps: {
     title: 'How it works',
@@ -31,22 +59,27 @@ export const copy = {
 
   pricing: {
     title: 'TrueInventor Dossier Pricing',
-    subtitle: 'Pilot pricing for the first 10 customers',
-    guarantee: pricing.guarantee.join(' '),
+    subtitle: updatedPricing.banner,
+    guarantee: updatedPricing.guarantee,
     compliance: whatsInside.note,
-    enterpriseNote: pricing.footnote
+    enterpriseNote: pricing.footnote,
+    std: updatedPricing.std,
+    pro: updatedPricing.pro
   },
 
   faq: {
     title: 'FAQ',
-    items: faq.map(item => ({
+    items: updatedFaq.map(item => ({
       question: item.q,
       answer: item.a
     }))
   },
 
+  methodsQA: methodsQA,
+
   contact: {
-    title: 'Contact',
+    title: 'Get Your TrueInventor™ Dossier',
+    subtitle: 'Request a dossier for your preferred vertical/company',
     email: 'hello@nuvel.ai',
     form: {
       title: 'Get started',
