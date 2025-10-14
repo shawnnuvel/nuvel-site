@@ -1,0 +1,19 @@
+{
+  "input_patents": 167,
+  "dropped_null_patents": 3,
+  "dedup_removed_count": 26,
+  "rendered_patents": 138,
+  "proof_links_direct": 10,
+  "proof_links_search": 95,
+  "verified_links_total": 105,
+  "verified_links_coverage_raw": 0.7608695652173914,
+  "verified_links_coverage_display": 76.08695652173914,
+  "issuer_display_fixed_count": 15,
+  "issuer_missing_fixed_count": 24,
+  "pages_total": 51,
+  "pages_with_networks": 0,
+  "pages_solo": 50,
+  "industries_hidden": 50,
+  "noindex_on_all_pages": true,
+  "external_links_checked": 105
+}
