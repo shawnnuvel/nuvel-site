@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nuvel-verify-graph.vercel.app/sitemap.xml
+Sitemap: https://nuvel.ai/sitemap.xml
+Sitemap: https://nuvel.ai/public-50/sitemap.xml

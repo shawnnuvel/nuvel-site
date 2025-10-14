@@ -21,6 +21,9 @@ const nextConfig = {
 
       // person pages without .html
       { source: '/public-50/people/:slug', destination: '/public-50/people/:slug.html' },
+      
+      // sitemap pretty URL
+      { source: '/public-50/sitemap.xml', destination: '/public-50/sitemap-public-50.xml' },
     ];
   },
 
