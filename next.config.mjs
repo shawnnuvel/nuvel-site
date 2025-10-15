@@ -30,32 +30,13 @@ const nextConfig = {
       {
         source: '/public-50/:path*.html',
         headers: [
-          // XFO allows same-origin embedding
-          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
-          // if you already set a CSP elsewhere, add a permissive frame-ancestors here
-          { key: 'Content-Security-Policy', value: "frame-ancestors 'self'" },
-          // short cache to avoid stale HTML artefacts during iteration
+          // allow same-origin iframe embedding
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },         // MDN: SAMEORIGIN permits same-site framing
+          { key: 'Content-Security-Policy', value: "frame-ancestors 'self'" }, // MDN: controls allowed parent frames
           { key: 'Cache-Control', value: 'public, max-age=60, s-maxage=60, stale-while-revalidate=300' },
         ],
       },
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY'
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff'
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'strict-origin-when-cross-origin'
-          }
-        ]
-      }
-    ]
+    ];
   }
 }
 
