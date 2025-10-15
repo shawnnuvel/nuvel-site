@@ -1,0 +1,15 @@
+{
+  "fontStack": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+  "colors": {
+    "bodyBg": "#FFFFFF",
+    "bodyText": "#1E293B",
+    "linkCol": "#FFFFFF",
+    "navBg": "#FFFFFF",
+    "borderCol": "#E5E7EB",
+    "mutedCol": "#1E293B"
+  },
+  "typeScale": {
+    "h1Size": "60px",
+    "h2Size": "36px"
+  }
+}

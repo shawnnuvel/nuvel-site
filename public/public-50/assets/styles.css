@@ -1,22 +1,13 @@
 :root{
-  /* Nuvel brand (dark) */
-  --brand-bg: #0b0e11;
-  --brand-card: #11151a;
-  --brand-text: #e6eef5;
-  --brand-muted: #a9b7c6;
-  --brand-primary: #5bb8ff;   /* links, accents */
-  --brand-accent:  #89ffa3;   /* highlights */
-  --brand-danger:  #ff6b6b;
-  --brand-border:  #1c2430;
-
-  /* Typography */
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Inter, "Helvetica Neue",
-               Arial, "Noto Sans", "Liberation Sans", Ubuntu, Cantarell, "DejaVu Sans", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-
-  /* Sizing */
-  --radius: 14px;
-  --shadow: 0 4px 20px rgba(0,0,0,.35);
+  --nuvel-font-sans: Inter, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --nuvel-bg: #FFFFFF;
+  --nuvel-text: #1E293B;
+  --nuvel-muted: #1E293B;
+  --nuvel-primary: #FFFFFF;
+  --nuvel-border: #E5E7EB;
+  --nuvel-surface: #FFFFFF;
+  --nuvel-h1: 60px;
+  --nuvel-h2: 36px;
 }
 
 /* Page base */
@@ -207,3 +198,23 @@ th{ color: var(--brand-muted); font-weight:600; }
 @media (max-width: 600px){
   .metrics{ grid-template-columns:1fr; }
 }
+/* NUVEL_INTEGRATION */
+
+html,body{ background:var(--nuvel-bg); color:var(--nuvel-text); font-family:var(--nuvel-font-sans); }
+h1{ font-size:var(--nuvel-h1); font-weight:700; letter-spacing:.005em; }
+h2{ font-size:var(--nuvel-h2); font-weight:600; color:var(--nuvel-muted); }
+a{ color:var(--nuvel-primary); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+.card, .person-card, .metrics .metric{
+  background: var(--nuvel-surface);
+  border: 1px solid var(--nuvel-border);
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.06);
+}
+.badge{ background: rgba(0,0,0,.03); border:1px solid var(--nuvel-border); color:var(--nuvel-muted); }
+.proof-btn{
+  display:inline-flex; gap:.4rem; align-items:center; padding:.5rem .8rem;
+  background:transparent; border:1px solid var(--nuvel-border); border-radius:999px; color:var(--nuvel-text);
+}
+.proof-btn:hover{ border-color:var(--nuvel-primary); box-shadow:0 0 0 2px color-mix(in oklab, var(--nuvel-primary) 25%, transparent); }
+
