@@ -40,6 +40,9 @@ export function Deliverables() {
             <a href="/samples/redacted" className="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium text-lg transition-colors">
               See a redacted sample →
             </a>
+            <a href="/public-50" className="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium text-lg transition-colors ml-6">
+              See the Public-50 showcase →
+            </a>
           </div>
         </div>
       </Container>

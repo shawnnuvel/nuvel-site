@@ -68,13 +68,19 @@ export default function SamplePage() {
                     'Inventors sheet: Disambiguated inventor profiles',
                     'Patents sheet: Patent details with registry links',
                     'Assignees sheet: Harmonized company information',
-                    '2-page PDF brief: Executive summary and methodology'
+                    'Web Brief (HTML): Executive summary and methodology'
                   ].map((item, index) => (
                     <div key={index} className="flex items-center">
                       <div className="w-2 h-2 bg-success-500 rounded-full mr-4"></div>
                       <span className="text-primary-700">{item}</span>
                     </div>
                   ))}
+                </div>
+
+                <div className="text-center mb-8">
+                  <a href="/public-50" className="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium text-lg transition-colors">
+                    See the Public-50 showcase →
+                  </a>
                 </div>
 
                 {/* CTA */}
@@ -117,6 +123,12 @@ export default function SamplePage() {
             >
               Get a sample dossier
             </a>
+
+            <p className="mt-6">
+              <a href="/public-50" className="text-accent-600 hover:text-accent-700 font-medium">
+                Browse the Public-50 showcase →
+              </a>
+            </p>
           </div>
         </Container>
       </section>

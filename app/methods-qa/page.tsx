@@ -88,6 +88,12 @@ Timeline:`
             >
               {copy.methodsQA.cta}
             </a>
+            
+            <p className="mt-6">
+              <a href="/public-50" className="text-accent-600 hover:text-accent-700 font-medium">
+                Browse the Public-50 showcase →
+              </a>
+            </p>
           </div>
         </Container>
       </section>

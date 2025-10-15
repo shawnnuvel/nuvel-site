@@ -68,6 +68,12 @@ export default function RedactedSamplePage() {
                   ))}
                 </div>
 
+                <div className="text-center mb-8">
+                  <a href="/public-50" className="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium text-lg transition-colors">
+                    See the Public-50 showcase →
+                  </a>
+                </div>
+
                 <div className="bg-primary-50 rounded-lg p-6 mb-8">
                   <p className="text-sm text-primary-600">
                     <strong>Note:</strong> Patents publish ~18 months after filing; we provide a forensic snapshot of the public record.
@@ -118,6 +124,12 @@ Timeline:`
             >
               Request sample dossier
             </a>
+
+            <p className="mt-6">
+              <a href="/public-50" className="text-accent-600 hover:text-accent-700 font-medium">
+                Browse the Public-50 showcase →
+              </a>
+            </p>
           </div>
         </Container>
       </section>

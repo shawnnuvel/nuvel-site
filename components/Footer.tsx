@@ -28,6 +28,12 @@ export function Footer() {
                   Sample Report
                 </a>
                 <a 
+                  href="/public-50"
+                  className="text-sm text-primary-600 hover:text-primary-800 transition-colors"
+                >
+                  Public-50 Showcase
+                </a>
+                <a 
                   href="mailto:hello@nuvel.ai"
                   className="text-sm text-primary-600 hover:text-primary-800 transition-colors"
                 >

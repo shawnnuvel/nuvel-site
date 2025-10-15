@@ -99,6 +99,9 @@ export default function Pricing() {
           <p className="text-sm text-gray-500">
             {copy.pricing.guarantee}
           </p>
+          <p className="text-sm text-gray-400 mt-4">
+            Want to see it in action? <a href="/public-50" className="text-accent-600 hover:text-accent-700">Public-50 showcase →</a>
+          </p>
         </div>
       </div>
     </section>

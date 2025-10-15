@@ -36,6 +36,9 @@ export function HowTeamsUse() {
                   <a href="/samples/redacted" className="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium">
                     {card.link}
                   </a>
+                  <a href="/public-50" className="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium ml-4">
+                    See the Public-50 showcase →
+                  </a>
                 </div>
               </div>
             ))}

@@ -87,6 +87,12 @@ export function Header() {
                       >
                         What you get
                       </button>
+                      <a
+                        href="/public-50"
+                        className="btn-ghost text-sm"
+                      >
+                        Showcase
+                      </a>
                       <button
                         onClick={() => scrollToSection('pricing')}
                         className="btn-ghost text-sm"
