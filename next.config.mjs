@@ -28,7 +28,16 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/public-50/:path*.html',
+        source: '/public-50/index.html',
+        headers: [
+          // allow same-origin iframe embedding
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },         // MDN: SAMEORIGIN permits same-site framing
+          { key: 'Content-Security-Policy', value: "frame-ancestors 'self'" }, // MDN: controls allowed parent frames
+          { key: 'Cache-Control', value: 'public, max-age=60, s-maxage=60, stale-while-revalidate=300' },
+        ],
+      },
+      {
+        source: '/public-50/people/:path*.html',
         headers: [
           // allow same-origin iframe embedding
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },         // MDN: SAMEORIGIN permits same-site framing
