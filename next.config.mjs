@@ -16,9 +16,6 @@ const nextConfig = {
   // URL rewrites for Showcase
   async rewrites() {
     return [
-      // pretty URL for the Showcase entrypoint
-      { source: '/public-50', destination: '/public-50/index.html' },
-
       // person pages without .html
       { source: '/public-50/people/:slug', destination: '/public-50/people/:slug.html' },
       
