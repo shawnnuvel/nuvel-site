@@ -19,12 +19,11 @@ export function ContactForm() {
     e.preventDefault()
     
     // Create mailto link with form data
-    const subject = 'TrueInventor™ Dossier Request'
+    const subject = 'TrueGraph Early Access Request'
     const body = `Name: ${formData.name}
 Email: ${formData.email}
 Company: ${formData.company}
-Technical Domain or Target Company: ${formData.technicalDomain}
-Seed Patents: ${formData.seedPatents}
+Use Case: ${formData.technicalDomain}
 Timeline: ${formData.timeline}
 Additional Notes: ${formData.notes}`
     
@@ -40,7 +39,7 @@ Additional Notes: ${formData.notes}`
   }
 
   return (
-    <section id="contact" className="section-padding bg-white">
+    <section id="contact" className="py-16 md:py-24 bg-white">
       <Container>
         <div className="max-w-2xl mx-auto">
           {/* Section header */}
@@ -104,7 +103,7 @@ Additional Notes: ${formData.notes}`
 
             <div>
               <label htmlFor="technicalDomain" className="block text-sm font-medium text-primary-900 mb-2">
-                Technical Domain or Target Company *
+                Use Case *
               </label>
               <input
                 type="text"
@@ -113,22 +112,7 @@ Additional Notes: ${formData.notes}`
                 value={formData.technicalDomain}
                 onChange={handleChange}
                 required
-                placeholder="e.g., AI/ML, Robotics, Biotech, Quantum Computing"
-                className="w-full px-4 py-3 border border-primary-200 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="seedPatents" className="block text-sm font-medium text-primary-900 mb-2">
-                Seed Patents (Optional)
-              </label>
-              <textarea
-                id="seedPatents"
-                name="seedPatents"
-                value={formData.seedPatents}
-                onChange={handleChange}
-                rows={3}
-                placeholder="Provide specific patent numbers or patent families you'd like us to analyze..."
+                placeholder="e.g., Corp Dev DD on Google teams, CVC thesis around frontier AI teams"
                 className="w-full px-4 py-3 border border-primary-200 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors"
               />
             </div>
@@ -170,7 +154,7 @@ Additional Notes: ${formData.notes}`
               type="submit"
               className="w-full btn-primary text-lg py-4"
             >
-              Request TrueInventor™ Dossier
+              Request early access
             </button>
           </form>
 

@@ -1,94 +1,120 @@
 import { 
   hero, 
-  howItWorks, 
-  whatsInside, 
-  pricing, 
-  faq, 
-  footer,
-  problemSolution,
-  howTeamsUse,
-  deliverables,
-  whyNuvel,
-  updatedPricing,
-  updatedFaq,
-  methodsQA,
-  socialProof
-} from './trueinventor'
+  whatTrueGraphDoes,
+  whoThisIsFor,
+  demoTeams,
+  howItWorks,
+  dataAndMethod,
+  statusAndAccess,
+  faq,
+  contact
+} from './truegraph'
 
 export const copy = {
   hero: {
     title: hero.title,
     subtitle: hero.subtitle,
-    outcomeRow: '',
+    bullets: hero.bullets,
     primaryCTA: hero.primaryCta,
     secondaryCTA: hero.secondaryCta,
     trustLine: ''
   },
 
-  socialProof: socialProof,
+  whatTrueGraphDoes: whatTrueGraphDoes,
 
-  problemSolution: {
-    problem: problemSolution.problem,
-    solution: problemSolution.solution
-  },
+  whoThisIsFor: whoThisIsFor,
 
-  howTeamsUse: howTeamsUse,
-
-  deliverables: deliverables,
-
-  whyNuvel: whyNuvel,
+  demoTeams: demoTeams,
 
   steps: {
-    title: 'How it works',
-    subtitle: 'Four simple steps',
+    title: howItWorks.title,
+    subtitle: '',
     items: howItWorks.steps.map((step, index) => ({
       number: (index + 1).toString(),
       title: step.title,
-      description: step.body
+      bullets: step.bullets
     }))
   },
 
+  dataAndMethod: dataAndMethod,
+
+  statusAndAccess: statusAndAccess,
+
+  // Legacy fields for compatibility with other pages
   benefits: {
-    title: whatsInside.title,
-    subtitle: 'Deliverables (TrueInventor Dossier)',
-    items: whatsInside.bullets.map((bullet, index) => ({
-      title: bullet.split(':')[0] || `Feature ${index + 1}`,
-      description: bullet.split(':').slice(1).join(':').trim() || bullet
-    }))
+    title: demoTeams.title,
+    subtitle: demoTeams.note || '',
+    items: []
   },
 
   pricing: {
-    title: 'TrueInventor Dossier Pricing',
-    subtitle: updatedPricing.banner,
-    guarantee: updatedPricing.guarantee,
-    compliance: whatsInside.note,
-    enterpriseNote: pricing.footnote,
-    std: updatedPricing.std,
-    pro: updatedPricing.pro
+    title: 'Pricing',
+    subtitle: 'Contact us for pricing information',
+    guarantee: 'No subscriptions. Re-run or refund if we miss the agreed parameters.',
+    compliance: '',
+    enterpriseNote: '',
+    std: {
+      name: 'Standard',
+      price: 'Contact us',
+      description: 'Contact us for pricing details',
+      footnote: ''
+    },
+    pro: {
+      name: 'Extended',
+      price: 'Contact us',
+      description: 'Contact us for pricing details'
+    }
+  },
+
+  methodsQA: {
+    title: dataAndMethod.title,
+    intro: dataAndMethod.intro,
+    sections: [
+      {
+        title: 'Data sources',
+        content: dataAndMethod.bullets[0]
+      },
+      {
+        title: 'Team definition',
+        content: dataAndMethod.bullets[1]
+      },
+      {
+        title: 'Signals',
+        content: dataAndMethod.bullets[2]
+      },
+      {
+        title: 'Delivery',
+        content: dataAndMethod.bullets[3]
+      },
+      {
+        title: 'Positioning',
+        content: dataAndMethod.bullets[4]
+      }
+    ],
+    compliance: dataAndMethod.disclaimer,
+    cta: statusAndAccess.cta
   },
 
   faq: {
     title: 'FAQ',
-    items: updatedFaq.map(item => ({
+    items: faq.map(item => ({
       question: item.q,
       answer: item.a
     }))
   },
 
-  methodsQA: methodsQA,
-
   contact: {
-    title: 'Get Your TrueInventor™ Dossier',
-    subtitle: 'Request a dossier for your preferred vertical/company',
-    email: 'hello@nuvel.ai',
+    title: contact.title,
+    subtitle: contact.subtitle,
+    email: contact.email,
     form: {
       title: 'Get started',
-      fields: ['name', 'email', 'company', 'theme'],
+      fields: ['name', 'email', 'company', 'use_case'],
       fallbackNote: 'Or email us directly at hello@nuvel.ai'
     }
   },
 
-  // Legacy content kept for compatibility
+  // Legacy content kept for compatibility (may be used by other pages)
   whyUseful: {
     title: 'Why this is useful',
     columns: [
@@ -111,20 +137,7 @@ export const copy = {
   },
 
   legalDisclaimer: {
-    text: footer.disclaimer
-  },
-
-  guarantee: {
-    short: 'If your scope returns <2 high-confidence teams: full refund or free re-run.',
-    full: `Results Guarantee
-If your defined scope yields fewer than 2 high-confidence teams, you choose: full refund or a free re-run on an adjacent theme.
-
-Scope = theme, 3–6 anchor employers, region(s), roles, team size 2–5
-High-confidence = day-level dates for all members, ≥90-day co-work at the same employer, dense connections (≥0.50), layoff spikes excluded, patent/role evidence.
-
-Claim within 5 days of delivery at hello@nuvel.ai.
-Exclusions: scopes changed after intake, outside intake limits, or unrelated requests.`,
-    scopeHelper: 'Scope = theme, 3–6 anchor employers, region(s), roles, team size 2–5.'
+    text: 'Based on historical public web sources. Supporting evidence only. Client owns decisions. Data cut-off: 2024-12-31.'
   },
 
   // Page-specific content
@@ -170,25 +183,25 @@ Exclusions: scopes changed after intake, outside intake limits, or unrelated req
   // Email templates
   emails: {
     sampleRequest: {
-      subject: 'Request sample dossier — TrueInventor Dossier',
+      subject: 'Request TrueGraph demo',
       body: `Company name:
-Technical domain:
+Use case:
 Timeline:`
     },
     
     headerSampleRequest: {
-      subject: 'Request sample dossier — TrueInventor Dossier',
+      subject: 'Request TrueGraph demo',
       body: `Company name:
-Technical domain:
+Use case:
 Timeline:`
     },
     
     contactForm: {
-      subject: 'Contact request — TrueInventor Dossier',
+      subject: 'TrueGraph early access request',
       body: `Name: 
 Email: 
 Company: 
-Technical domain: `
+Use case: `
     }
   }
 } as const

@@ -21,16 +21,18 @@ const stepIcons = [
 
 export function Steps() {
   return (
-    <section id="how-it-works" className="section-padding bg-white">
+    <section id="how-it-works" className="py-16 md:py-24 bg-white">
       <Container>
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-4">
             {copy.steps.title}
           </h2>
-          <p className="text-xl text-primary-600 max-w-2xl mx-auto">
-            {copy.steps.subtitle}
-          </p>
+          {copy.steps.subtitle && (
+            <p className="text-xl text-primary-600 max-w-2xl mx-auto">
+              {copy.steps.subtitle}
+            </p>
+          )}
         </div>
 
         {/* Steps grid */}
@@ -44,7 +46,7 @@ export function Steps() {
 
               {/* Content */}
               <div className="text-center md:text-left">
-                <div className="flex items-center justify-center md:justify-start mb-3">
+                <div className="flex items-center justify-center md:justify-start mb-4">
                   <span className="inline-flex items-center justify-center w-6 h-6 bg-accent-600 text-white text-sm font-bold rounded-full mr-3">
                     {step.number}
                   </span>
@@ -52,9 +54,20 @@ export function Steps() {
                     {step.title}
                   </h3>
                 </div>
-                <p className="text-primary-600 leading-relaxed">
-                  {step.description}
-                </p>
+                {step.bullets ? (
+                  <ul className="space-y-2">
+                    {step.bullets.map((bullet: string, bulletIndex: number) => (
+                      <li key={bulletIndex} className="flex items-start text-primary-600 text-sm">
+                        <div className="w-1.5 h-1.5 bg-accent-500 rounded-full mr-3 mt-1.5 flex-shrink-0"></div>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-primary-600 leading-relaxed">
+                    {step.description}
+                  </p>
+                )}
               </div>
 
               {/* Connection line (hidden on mobile) */}

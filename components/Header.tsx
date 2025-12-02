@@ -82,35 +82,17 @@ export function Header() {
                         How it works
                       </button>
                       <button
-                        onClick={() => scrollToSection('whats-inside')}
+                        onClick={() => scrollToSection('demo-teams')}
                         className="btn-ghost text-sm"
                       >
-                        What you get
-                      </button>
-                      <a
-                        href="/public-50"
-                        className="btn-ghost text-sm"
-                      >
-                        Showcase
-                      </a>
-                      <button
-                        onClick={() => scrollToSection('pricing')}
-                        className="btn-ghost text-sm"
-                      >
-                        Pricing
+                        Demo teams
                       </button>
                       <button
-                        onClick={() => scrollToSection('how-teams-use-this')}
-                        className="btn-ghost text-sm"
-                      >
-                        How teams use this
-                      </button>
-                      <a
-                        href="/methods-qa"
+                        onClick={() => scrollToSection('data-and-method')}
                         className="btn-ghost text-sm"
                       >
                         Methods & QA
-                      </a>
+                      </button>
                       <button
                         onClick={() => scrollToSection('faq')}
                         className="btn-ghost text-sm"
@@ -132,11 +114,15 @@ export function Header() {
       {isScrolled && (
         <div className="fixed top-4 right-4 z-50">
           <a
-            href="mailto:hello@nuvel.ai?subject=Request TrueInventor Sample&body=Company name:%0ATechnical domain:%0ATimeline:"
+            href="#contact"
             className="inline-flex items-center px-4 py-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold text-sm rounded-lg shadow-lg transition-colors"
-            aria-label="Get a Dossier"
+            aria-label="Request TrueGraph demo"
+            onClick={(e) => {
+              e.preventDefault()
+              scrollToSection('contact')
+            }}
           >
-            Get a Dossier
+            Request TrueGraph demo
           </a>
         </div>
       )}

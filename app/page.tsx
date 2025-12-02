@@ -1,25 +1,25 @@
 import { Hero } from '@/components/Hero'
-import { SocialProof } from '@/components/SocialProof'
-import { ProblemSolution } from '@/components/ProblemSolution'
-import { Deliverables } from '@/components/Deliverables'
-import { HowTeamsUse } from '@/components/HowTeamsUse'
-import { RiskReversal } from '@/components/RiskReversal'
-import Pricing from '@/components/Pricing'
+import { WhatTrueGraphDoes } from '@/components/WhatTrueGraphDoes'
+import { WhoThisIsFor } from '@/components/WhoThisIsFor'
+import { DemoTeams } from '@/components/DemoTeams'
+import { Steps } from '@/components/Steps'
+import { DataAndMethod } from '@/components/DataAndMethod'
+import { StatusAndAccess } from '@/components/StatusAndAccess'
 import { FAQ } from '@/components/FAQ'
 import { ContactForm } from '@/components/ContactForm'
 
 export default function HomePage() {
   return (
-    <>
+    <div className="space-y-16 md:space-y-24">
       <Hero />
-      <SocialProof />
-      <ProblemSolution />
-      <Deliverables />
-      <HowTeamsUse />
-      <RiskReversal />
-      <Pricing />
+      <WhatTrueGraphDoes />
+      <WhoThisIsFor />
+      <DemoTeams />
+      <Steps />
+      <DataAndMethod />
+      <StatusAndAccess />
       <FAQ />
       <ContactForm />
-    </>
+    </div>
   )
 }
