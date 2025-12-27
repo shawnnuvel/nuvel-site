@@ -1,108 +1,91 @@
 export const productName = "TrueGraph (by Nuvel)";
 
 export const hero = {
-  title: "TrueGraph finds real teams, not random profiles.",
+  title: "Power Semiconductor Devices IP & inventor maps for deal teams.",
   subtitle:
-    "Nuvel's TrueGraph surfaces small teams of people who actually worked together at companies like Google and TSMC — with employment history and patent signals you can inspect.",
-  bullets: [
-    "2–5 person teams with verified overlap at the same employer.",
-    "Global coverage across thousands of locations and tech domains.",
-    "Built for corp dev, CVC, PE and technical due diligence."
-  ],
-  primaryCta: "Request TrueGraph demo",
-  secondaryCta: "See example teams"
+    "TrueGraph builds segment-level views of companies, countries, and inventors around Power Semiconductor Devices from a static public-data baseline.",
+  primaryCta: "Join Power Semis beta",
+  secondaryCta: "See example views"
 };
 
 export const whatTrueGraphDoes = {
-  title: "What TrueGraph actually does",
-  intro: "TrueGraph surfaces small teams of people who really worked together, built from public employment histories and patents on a static baseline.",
+  title: "What TrueGraph does",
+  intro: "TrueGraph builds segment-level IP and talent maps from a static public-data baseline. Start from a segment like Power Semiconductors and see which companies and countries are active by patent and inventor counts over time.",
   features: [
     {
-      title: "Teams first",
-      description: "You don't start with individuals, you start with small teams who have actually worked together.",
+      title: "Segment-first views",
+      description: "Start from a technical segment and see company × country and company × year breakdowns built from inventor employment histories plus patent data.",
       bullets: [
-        "2–5 people with 90+ day verified overlap",
-        "Same employer, meaningful overlap period"
+        "Company × country and company × year indexes per segment",
+        "Built from inventor employment histories plus patent data"
       ]
     },
     {
-      title: "Evidence, not vibes",
-      description: "Each team comes with roles, dates, locations, and patent signals where available.",
+      title: "Inventor evidence drawers",
+      description: "When you click a company/year in the UI, you see the underlying inventors, their anchor company, roles, and related patents.",
       bullets: [
-        "Backed by links to public sources",
-        "Employment history you can inspect"
+        "Top inventors per company with employment + patent evidence",
+        "Pods/pairs shown as supporting evidence, not the main product"
       ]
     },
     {
-      title: "Static, auditable baseline",
-      description: "TrueGraph is built from a static historical cut of public data. It's designed for diligence and research, not live sourcing.",
+      title: "Static baseline for diligence",
+      description: "TrueGraph is built from a static 2010–2022 baseline for forensic diligence, not live scraping.",
       bullets: [
-        "No scraping while you browse",
-        "Same inputs every time you rerun a query"
+        "Static AS-OF date snapshot",
+        "Designed for diligence and research, not live sourcing"
       ]
     }
   ]
 };
 
 export const whoThisIsFor = {
-  title: "Who TrueGraph is for",
+  title: "Who it's for",
   tiles: [
     {
-      title: "Corp Dev / Strategy",
-      description: "Check acqui-hire stories against reality.",
+      title: "Corp Dev",
+      description: "Segment-level IP and talent signals for acquisition diligence.",
       bullets: [
-        "See intact teams around an anchor company or theme",
-        "Verify roll-up theses before you write a cheque"
+        "See which companies are active in Power Semis by country and year",
+        "Identify top inventors per company with employment + patent evidence"
       ]
     },
     {
-      title: "CVC / VC investors",
-      description: "Go beyond 'ex-Google' labels.",
+      title: "CVC",
+      description: "Segment-level IP and talent signals for investment theses.",
       bullets: [
-        "Spot operator teams and repeat collaborators",
-        "Anchor on real co-work, not just logos"
+        "Map company × country and company × year activity",
+        "Assess people risk and technical depth"
       ]
     },
     {
-      title: "PE / Growth",
-      description: "See the people risk behind a platform thesis.",
+      title: "PE/VC",
+      description: "Segment-level IP and talent signals for deal teams.",
       bullets: [
-        "Find intact operating teams around key anchors",
-        "Check how long they actually worked together"
+        "Understand segment-level IP and talent landscape",
+        "Identify key companies and inventors in Power Semis"
       ]
     },
     {
-      title: "R&D / IP strategy",
-      description: "Tie inventors and teams together around specific themes.",
+      title: "IP and R&D Strategy",
+      description: "Segment-level IP and talent maps for strategic planning.",
       bullets: [
-        "Link patents back to real employment histories",
-        "See which teams are driving a theme, not just names"
+        "Company × country and company × year views per segment",
+        "Top inventors per company with employment + patent evidence"
       ]
     }
   ]
 };
 
 export const demoTeams = {
-  title: "Current demo teams",
-  cards: [
-    {
-      title: "Google hero teams (US anchor)",
-      bullets: [
-        "40 teams and 87 current Google/Alphabet employees",
-        "Teams of 2–4 people with a median ~7 year overlap",
-        "26 countries represented, some teams include inventors"
-      ]
-    },
-    {
-      title: "TSMC chip teams (semiconductors)",
-      bullets: [
-        "14 teams and 32 people anchored on TSMC entities",
-        "Small teams of chip, process and packaging engineers",
-        "Patent fields attached where available"
-      ]
-    }
+  title: "Power Semis preset",
+  description: "The first preset focuses on Power Semiconductor Devices and includes:",
+  bullets: [
+    "Tens of thousands of patents and tens of thousands of inventors",
+    "Company × country and company × year breakdowns",
+    "Top inventors per company with basic evidence"
   ],
-  note: "We're adding more presets around anchor companies and themes as we work with early design partners."
+  note: "We're adding more segment presets as we work with early design partners."
 };
 
 export const howItWorks = {
@@ -134,12 +117,12 @@ export const howItWorks = {
 
 export const dataAndMethod = {
   title: "Data and method",
-  intro: "TrueGraph is built from a static baseline of public employment and patent records. We turn that into teams using simple, transparent rules.",
+  intro: "TrueGraph is built from a static baseline of public employment and patent records. We build segment-level indexes from inventor employment histories plus patent data.",
   bullets: [
     "Data sources: historical public employment profiles plus patent data.",
-    "Teams: 2–5 people with verified overlap at the same employer, usually 90+ days.",
-    "Signals: roles, dates, locations and patent counts where available.",
-    "Delivery: prebuilt Parquet indexes (people, experience, teams and team presets) that our API reads at query time.",
+    "Segment indexes: company × country and company × year views built from inventor employment histories plus patent data.",
+    "Inventor evidence: top inventors per company with employment + patent evidence, including pods/pairs as supporting evidence.",
+    "Delivery: prebuilt segment indexes (company × country, company × year, inventor evidence) that our API reads at query time.",
     "Positioning: a signal layer to support your own diligence, not legal verification."
   ],
   disclaimer: "TrueGraph is a signal layer. It does not replace your own background checks or legal diligence."
@@ -183,4 +166,6 @@ export const contact = {
   subtitle: "Tell us about your use case and we'll get back to you.",
   email: "hello@nuvel.ai"
 };
+
+
 

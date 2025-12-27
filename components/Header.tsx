@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
+import Link from 'next/link'
 import { Logo } from './Logo'
 import { Container } from './Container'
 import { createMailtoLink } from '@/lib/utils'
@@ -74,55 +75,61 @@ export function Header() {
             <Logo />
 
                     {/* Navigation */}
-                    <nav className="hidden md:flex items-center space-x-8">
-                      <button
-                        onClick={() => scrollToSection('how-it-works')}
-                        className="btn-ghost text-sm"
+                    <nav className="hidden md:flex items-center space-x-6">
+                      <Link
+                        href="/"
+                        className={`text-sm font-medium transition-colors ${
+                          pathname === '/' ? 'text-accent-600' : 'text-primary-700 hover:text-accent-600'
+                        }`}
                       >
-                        How it works
-                      </button>
-                      <button
-                        onClick={() => scrollToSection('demo-teams')}
-                        className="btn-ghost text-sm"
+                        Home
+                      </Link>
+                      <Link
+                        href="/trueinventor"
+                        className={`text-sm font-medium transition-colors ${
+                          pathname === '/trueinventor' ? 'text-accent-600' : 'text-primary-700 hover:text-accent-600'
+                        }`}
                       >
-                        Demo teams
-                      </button>
-                      <button
-                        onClick={() => scrollToSection('data-and-method')}
-                        className="btn-ghost text-sm"
+                        TrueInventor
+                      </Link>
+                      <Link
+                        href="/truegraph"
+                        className={`text-sm font-medium transition-colors ${
+                          pathname === '/truegraph' ? 'text-accent-600' : 'text-primary-700 hover:text-accent-600'
+                        }`}
+                      >
+                        TrueGraph
+                      </Link>
+                      <Link
+                        href="/blog"
+                        className={`text-sm font-medium transition-colors ${
+                          pathname === '/blog' ? 'text-accent-600' : 'text-primary-700 hover:text-accent-600'
+                        }`}
+                      >
+                        Blog
+                      </Link>
+                      <Link
+                        href="/methods-qa"
+                        className={`text-sm font-medium transition-colors ${
+                          pathname === '/methods-qa' ? 'text-accent-600' : 'text-primary-700 hover:text-accent-600'
+                        }`}
                       >
                         Methods & QA
-                      </button>
-                      <button
-                        onClick={() => scrollToSection('faq')}
-                        className="btn-ghost text-sm"
-                      >
-                        FAQ
-                      </button>
-                      <button
-                        onClick={() => scrollToSection('contact')}
-                        className="btn-ghost text-sm"
-                      >
-                        Contact
-                      </button>
+                      </Link>
                     </nav>
           </div>
         </Container>
       </header>
 
       {/* Sticky CTA */}
-      {isScrolled && (
+      {isScrolled && pathname === '/' && (
         <div className="fixed top-4 right-4 z-50">
           <a
-            href="#contact"
+            href={createMailtoLink('hello@nuvel.ai', 'TrueGraph beta', "I'm interested in TrueGraph beta access.")}
             className="inline-flex items-center px-4 py-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold text-sm rounded-lg shadow-lg transition-colors"
-            aria-label="Request TrueGraph demo"
-            onClick={(e) => {
-              e.preventDefault()
-              scrollToSection('contact')
-            }}
+            aria-label="Join TrueGraph beta"
           >
-            Request TrueGraph demo
+            Join TrueGraph beta
           </a>
         </div>
       )}

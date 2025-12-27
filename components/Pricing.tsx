@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { copy } from '@/content/copy'
+import { updatedPricing } from '@/content/trueinventor'
 
 export default function Pricing() {
   return (
@@ -17,7 +17,7 @@ export default function Pricing() {
         {/* Pilot Banner */}
         <div className="max-w-4xl mx-auto mb-8">
           <div className="bg-accent-100 border border-accent-200 rounded-lg p-4 text-center">
-            <p className="text-accent-800 font-medium">{copy.pricing.subtitle}</p>
+            <p className="text-accent-800 font-medium">{updatedPricing.banner}</p>
           </div>
         </div>
 
@@ -28,27 +28,29 @@ export default function Pricing() {
             {/* Title and Price */}
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                {copy.pricing.std.name}
+                {updatedPricing.std.name}
               </h3>
               <p className="text-3xl font-bold text-accent-600 mb-4">
-                {copy.pricing.std.price}
+                {updatedPricing.std.price}
               </p>
             </div>
 
             {/* Description */}
             <div className="mb-6">
-              <p className="text-gray-700">{copy.pricing.std.description}</p>
+              <p className="text-gray-700">{updatedPricing.std.description}</p>
             </div>
 
             {/* Footnote */}
-            <div className="mb-6">
-              <p className="text-sm text-gray-500">{copy.pricing.std.footnote}</p>
-            </div>
+            {updatedPricing.std.footnote && (
+              <div className="mb-6">
+                <p className="text-sm text-gray-500">{updatedPricing.std.footnote}</p>
+              </div>
+            )}
 
             {/* CTA */}
             <div className="mb-4">
               <Link
-                href="#contact"
+                href="#request-form"
                 className="w-full inline-flex items-center justify-center px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors"
                 aria-label="Order Standard Dossier"
               >
@@ -69,22 +71,22 @@ export default function Pricing() {
             {/* Title and Price */}
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                {copy.pricing.pro.name}
+                {updatedPricing.pro.name}
               </h3>
               <p className="text-3xl font-bold text-accent-600 mb-4">
-                {copy.pricing.pro.price}
+                {updatedPricing.pro.price}
               </p>
             </div>
 
             {/* Description */}
             <div className="mb-6">
-              <p className="text-gray-700">{copy.pricing.pro.description}</p>
+              <p className="text-gray-700">{updatedPricing.pro.description}</p>
             </div>
 
             {/* CTA */}
             <div className="mb-4">
               <Link
-                href="#contact"
+                href="#request-form"
                 className="w-full inline-flex items-center justify-center px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors"
                 aria-label="Order Extended Dossier"
               >
@@ -97,7 +99,7 @@ export default function Pricing() {
         {/* Guarantee */}
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm text-gray-500">
-            {copy.pricing.guarantee}
+            {updatedPricing.guarantee}
           </p>
           <p className="text-sm text-gray-400 mt-4">
             Want to see it in action? <a href="/public-50" className="text-accent-600 hover:text-accent-700">Public-50 showcase →</a>

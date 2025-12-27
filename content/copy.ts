@@ -12,11 +12,11 @@ import {
 
 export const copy = {
   hero: {
-    title: hero.title,
-    subtitle: hero.subtitle,
-    bullets: hero.bullets,
-    primaryCTA: hero.primaryCta,
-    secondaryCTA: hero.secondaryCta,
+    title: hero.title as string,
+    subtitle: hero.subtitle as string,
+    bullets: ('bullets' in hero ? hero.bullets : undefined) as string[] | undefined,
+    primaryCTA: hero.primaryCta as string,
+    secondaryCTA: hero.secondaryCta as string,
     trustLine: ''
   },
 

@@ -4,10 +4,10 @@ import { copy } from '@/content/copy'
 import { createMailtoLink } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Methods & QA - TrueInventor™ Dossier',
+  title: 'Methods & QA | Nuvel',
   description: 'How we turn messy public patent data into a decision-ready dossier.',
   openGraph: {
-    title: 'Methods & QA - TrueInventor™ Dossier',
+    title: 'Methods & QA | Nuvel',
     description: 'How we turn messy public patent data into a decision-ready dossier.',
   },
 }

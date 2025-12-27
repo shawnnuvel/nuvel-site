@@ -12,9 +12,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'TrueInventor™ Dossier | Nuvel',
-  description: 'Stop cleaning patent exports. Get a decision-ready inventor dossier in 24 hours. Verified, disambiguated people–patent–company dossier you can trust.',
-  keywords: ['patent analysis', 'inventor dossier', 'patent export', 'registry links', 'disambiguation'],
+  title: 'Nuvel – IP and talent signals for technical deals',
+  description: 'Intellectual property and talent signals you can trust for technical deals. Nuvel connects patent filings to real employment histories, producing inventor dossiers and segment-level maps.',
+  keywords: ['patent analysis', 'inventor dossier', 'patent export', 'registry links', 'disambiguation', 'IP signals', 'talent signals'],
   authors: [{ name: 'Nuvel' }],
   creator: 'Nuvel',
   publisher: 'Nuvel',
@@ -31,15 +31,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    title: 'TrueInventor™ Dossier | Nuvel',
-    description: 'Stop cleaning patent exports. Get a decision-ready inventor dossier in 24 hours. Verified, disambiguated people–patent–company dossier you can trust.',
-    siteName: 'TrueInventor™ Dossier',
+    title: 'Nuvel – IP and talent signals for technical deals',
+    description: 'Intellectual property and talent signals you can trust for technical deals. Nuvel connects patent filings to real employment histories.',
+    siteName: 'Nuvel',
     images: [
       {
         url: '/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'TrueInventor™ Dossier',
+        alt: 'Nuvel – IP and talent signals for technical deals',
       },
     ],
   },

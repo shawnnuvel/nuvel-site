@@ -21,7 +21,7 @@ export function Hero() {
           {/* Bullets */}
           {copy.hero.bullets && (
             <ul className="space-y-3 mb-10 text-left max-w-2xl mx-auto">
-              {copy.hero.bullets.map((bullet, index) => (
+              {copy.hero.bullets.map((bullet: string, index: number) => (
                 <li key={index} className="flex items-start">
                   <div className="w-2 h-2 bg-accent-500 rounded-full mr-4 mt-2 flex-shrink-0"></div>
                   <span className="text-lg text-primary-700">{bullet}</span>
